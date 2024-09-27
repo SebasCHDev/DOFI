@@ -9,7 +9,7 @@ body {
 .titulo {
     font-size: 2em;
     margin-bottom: 20px;
-    background-color: #cdd1d460;
+    background-color: #1a8ee760;
 }
 
 .titulo:hover::before {
