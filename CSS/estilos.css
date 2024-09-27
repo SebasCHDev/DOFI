@@ -2,14 +2,20 @@ body {
     background-color: #d3e0d3;
 }
 
+.header{
+    position: fixed;
+    width: 100%;
+}
+
 .container1 {
     text-align: center;
 }
 
 .titulo {
     font-size: 2em;
-    margin-bottom: 20px;
-    background-color: #1a8ee760;
+    margin: 5px;
+    /* background-color: #1a8ee760; */
+    background: linear-gradient(90deg, #58abec60, #58acecb9,#1a8ee7ee, #58acecb9, #58abec60);
 }
 
 .titulo:hover::before {
@@ -23,6 +29,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: #cdd1d479;
+    margin: 5px;
 }
 
 .submenu li {
@@ -37,8 +44,4 @@ body {
 
 .submenu a:hover {
     color: #007BFF;
-}
-
-.ejemplo{
-    color: red;
 }
