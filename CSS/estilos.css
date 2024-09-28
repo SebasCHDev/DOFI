@@ -16,12 +16,26 @@ body {
     margin: 5px;
     /* background-color: #1a8ee760; */
     background: linear-gradient(90deg, #58abec60, #58acecb9,#1a8ee7ee, #58acecb9, #58abec60);
+    position: relative;
+    text-align: center;
+    cursor: pointer;
 }
 
-.titulo:hover::before {
-    content: "Domótica Optimizada para un Futuro Inteligente - ";
+.tituloCambio{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
+.titulo:hover .tituloOriginal {
+    opacity: 0;
+} 
+
+.titulo:hover .tituloCambio{
+    opacity: 1;
+}
 
 .submenu ul {
     list-style: none;
