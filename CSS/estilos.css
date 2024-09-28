@@ -1,39 +1,51 @@
+
 body {
-    background-color: #d3e0d3;
+    background-color: #fff;
+    height: 4800px;
 }
 
-.header{
+header{
     position: fixed;
     width: 100%;
 }
 
-.container1 {
-    text-align: center;
+.mainContainer{
+    height: 100%;
+    width: 80%;
+    display: grid;
+    grid-template-rows: repeat(8, 600px);
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.titulo {
-    font-size: 2em;
+.container1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 1.5em;
     margin: 5px;
-    /* background-color: #1a8ee760; */
     background: linear-gradient(90deg, #58abec60, #58acecb9,#1a8ee7ee, #58acecb9, #58abec60);
     position: relative;
     text-align: center;
     cursor: pointer;
 }
 
-.tituloCambio{
+.changeTitle{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.5s ease;
+    color: darkblue;
 }
 
-.titulo:hover .tituloOriginal {
+.title:hover .originalTitle {
     opacity: 0;
 } 
 
-.titulo:hover .tituloCambio{
+.title:hover .changeTitle{
     opacity: 1;
 }
 
@@ -58,4 +70,60 @@ body {
 
 .submenu a:hover {
     color: #04a6f7;
+}
+
+/* COLORES BGC SECTION
+--color1 { #e7f0f6 };
+--color2 { #b7d3e5 };
+ */
+
+.sectionDescription{
+    padding: 70px 2% 1%;
+    background-color: #e7f0f6;
+}
+
+.sectionPrice{
+    background-color: #b7d3e5;
+    padding: 1% 2% 1%;
+}
+
+.sectionServices{
+    background-color: #e7f0f6;
+    padding: 1% 2% 1%;
+}
+
+.sectionGallery{
+    background-color: #b7d3e5;
+    padding: 1% 2% 1%;
+}
+
+.sectionTestimony{
+    background-color: #e7f0f6;
+    padding: 1% 2% 1%;
+}
+
+.sectionOne{
+    background-color: #b7d3e5;
+    padding: 1% 2% 1%;
+}
+
+.sectionTwo{
+    background-color: #e7f0f6;
+    padding: 1% 2% 1%;
+}
+
+.sectionThree{
+    background-color: #b7d3e5;
+    padding: 1% 2% 2%;
+}
+
+
+@media (max-width: 742px){
+
+    .sectionDescription{
+        padding: 80px 2% 2%;
+        background-color: #e7f0f6;
+    }
+    
+
 }
