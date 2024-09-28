@@ -19,7 +19,7 @@ body {
 }
 
 .titulo:hover::before {
-    content: "Domótica Optimizada para un Futuro Inteligente";
+    content: "Domótica Optimizada para un Futuro Inteligente - ";
 }
 
 
