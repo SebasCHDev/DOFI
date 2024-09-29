@@ -1,75 +1,81 @@
-
 body {
-    background-color: #fff;
-    height: 4800px;
+  background-color: #fff;
+  height: 4800px;
 }
 
-header{
-    position: fixed;
-    width: 100%;
+header {
+  position: fixed;
+  width: 100%;
 }
 
-.mainContainer{
-    height: 100%;
-    width: 80%;
-    display: grid;
-    grid-template-rows: repeat(8, 600px);
-    margin-left: 10%;
-    margin-right: 10%;
+.mainContainer {
+  height: 100%;
+  width: 80%;
+  display: grid;
+  grid-template-rows: repeat(8, 600px);
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .container1 {
-    text-align: center;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .titleContainer {
-    font-size: 1.5em;
-    margin: 5px;
-    background: linear-gradient(90deg, #58abec60, #58acecb9,#1a8ee7ee, #58acecb9, #58abec60);
-    position: relative;
-    text-align: center;
-    cursor: pointer;
+  font-size: 1.5em;
+  margin: 5px;
+  background: linear-gradient(
+    90deg,
+    #58abec60,
+    #58acecb9,
+    #1a8ee7ee,
+    #58acecb9,
+    #58abec60
+  );
+  position: relative;
+  text-align: center;
+  cursor: pointer;
 }
 
-.changeTitle{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    color: darkblue;
+.changeTitle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  color: darkblue;
 }
 
 .titleContainer:hover .originalTitle {
-    opacity: 0;
-} 
+  opacity: 0;
+}
 
-.titleContainer:hover .changeTitle{
-    opacity: 1;
+.titleContainer:hover .changeTitle {
+  opacity: 1;
 }
 
 .submenu ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #cdd1d479;
-    margin: 5px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #cdd1d479;
+  margin: 5px;
 }
 
 .submenu li {
-    margin: 0 50px;
+  margin: 0 50px;
 }
 
 .submenu a {
-    text-decoration: none;
-    color: #444242;
-    font-size: 1em;
+  text-decoration: none;
+  color: #444242;
+  font-size: 1em;
 }
 
 .submenu a:hover {
-    color: #04a6f7;
+  color: #04a6f7;
 }
 
 /* COLORES BGC SECTION
@@ -77,204 +83,269 @@ header{
 --color2 { #b7d3e5 };
  */
 
-.sectionDescription{
-    padding: 70px 2% 1%;
-    background-color: #e7f0f6;
+.sectionDescription {
+  padding: 70px 2% 1%;
+  background-color: #e7f0f6;
 }
 
-.sectionPrice{
-    background-color: #b7d3e5;
-    padding: 1% 2% 1%;
+.sectionPrice {
+  background-color: #b7d3e5;
+  padding: 1% 2% 1%;
 }
 
-.sectionServices{
-    background-color: #e7f0f6;
-    padding: 1% 2% 1%;
+.sectionServices {
+  background-color: #e7f0f6;
+  padding: 1% 2% 1%;
 }
 
 /* MODIFICACIONES VICTOR 28 SEPTIEMBRE 2024 */
 
-.subtitleServices
-{
-    background-color: #15b5f5;
-    color: white;
-    border: 2px solid #1083b1;
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 20px;
-    padding: 20px;
-    font-size: 35px;
-    font-weight: bold;
+.subtitleServices {
+  background-color: #15b5f5;
+  color: white;
+  border: 2px solid #1083b1;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 35px;
+  font-weight: bold;
 }
 
-.servicesContainer
-{
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap:nowrap;
+.servicesContainer {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
-.tabla
-{ 
-    width: 29%;
-    height: 390px;
-    margin: auto;
-    border: 1px solid #1083b1;
-    background-color: rgb(223, 245, 252);
-    box-shadow: 0px 0px 4px 0px #1083b1;
-    padding: 15px;
-    text-align: center;
-    flex-grow: 1;
-    color: #1083b1; 
+.tabla {
+  width: 29%;
+  height: 390px;
+  margin: auto;
+  border: 1px solid #1083b1;
+  background-color: rgb(223, 245, 252);
+  box-shadow: 0px 0px 4px 0px #1083b1;
+  padding: 15px;
+  text-align: center;
+  flex-grow: 1;
+  color: #1083b1;
 }
 
-.tabla>h2
-{
-    background-color: rgb(5, 187, 248);
-    color:white;
-    text-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.87);;
-    border: 2px solid rgb(137, 218, 245);
-    border-radius: 5px;
-    box-shadow: 2px 2px 3px 0px rgb(123, 214, 245);
-    font-size: 35px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+.tabla > h2 {
+  background-color: rgb(5, 187, 248);
+  color: white;
+  text-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.87);
+  border: 2px solid rgb(137, 218, 245);
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px 0px rgb(123, 214, 245);
+  font-size: 35px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
-.tabla img
-{
-    margin-bottom: 5px;
-    height: 100px;
-    width: 100px;
+.tabla img {
+  margin-bottom: 5px;
+  height: 100px;
+  width: 100px;
 }
 
-.tabla img:hover
-{
-    margin-bottom: 5px;
-    filter: blur(1);
-    background-color: rgb(1, 1, 214);
-    transition: 1s all ease-in-out;
-    transform: scale(1.1, 1.1);
+.tabla img:hover {
+  margin-bottom: 5px;
+  filter: blur(1);
+  background-color: rgb(1, 1, 214);
+  transition: 1s all ease-in-out;
+  transform: scale(1.1, 1.1);
 }
 
-.tabla > h3
-{
-    margin-top: 10px;
-    font-size: 30px;
-    margin-bottom: 10px;
+.tabla > h3 {
+  margin-top: 10px;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
-.tabla > p
-{
-    display:block;
-    margin-bottom: 20px;
-    background-color: rgb(5, 187, 248);
-    border: 2px solid rgb(137, 218, 245);
-    border-radius: 5px;
-    color: white;
-    box-shadow: 2px 2px 3px 0px rgb(123, 214, 245);
-    padding: 0px 5px 0px;
+.tabla > p {
+  display: block;
+  margin-bottom: 20px;
+  background-color: rgb(5, 187, 248);
+  border: 2px solid rgb(137, 218, 245);
+  border-radius: 5px;
+  color: white;
+  box-shadow: 2px 2px 3px 0px rgb(123, 214, 245);
+  padding: 0px 5px 0px;
 }
 
-.buttonServices
-{
-    display: inline-block;
-    width: 150px;
-    padding: 12px;
-    background-color: #611d99;
-    box-shadow: 2px 2px 3px 0px rgba(216, 75, 252, 0.712);
-    text-decoration: none;
-    color: rgb(211, 235, 235);;
-    border-radius: 100px;
-    text-align: center;
-    font-size: 19px;
-    font-weight: bold;
-    margin: auto;
+.buttonServices {
+  display: inline-block;
+  width: 150px;
+  padding: 12px;
+  background-color: #611d99;
+  box-shadow: 2px 2px 3px 0px rgba(216, 75, 252, 0.712);
+  text-decoration: none;
+  color: rgb(211, 235, 235);
+  border-radius: 100px;
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+  margin: auto;
 }
 
-.buttonServices:hover
-{
-    background-color: rgb(7, 177, 72);
-    box-shadow: 3px 3px 5px 0px rgba(18, 241, 104, 0.616);
-    color: white;
-    transition: .5 all ease-in-out;
-    transform: scale(1 , 1);
+.buttonServices:hover {
+  background-color: rgb(7, 177, 72);
+  box-shadow: 3px 3px 5px 0px rgba(18, 241, 104, 0.616);
+  color: white;
+  transition: 0.5 all ease-in-out;
+  transform: scale(1, 1);
 }
 
-.tabla:hover
-{
-    background: #084cca;
-    color: #f1f1f2;
-    transition: .5s all;
-    transform: scale(1,1);
-    cursor: pointer;
+.tabla:hover {
+  background: #084cca;
+  color: #f1f1f2;
+  transition: 0.5s all;
+  transform: scale(1, 1);
+  cursor: pointer;
 }
 
 #standardService {
-    margin-left: 20px;
-    margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-@media screen and (max-width: 1000px){
-    .tabla{
-        width: 33%;
-        max-width: none;
-        margin-bottom: 40px;
-        flex-grow: initial;
-    }
-    .tabla h2{
-        margin-top: 40px;
-    }
-    .tabla h3{
-        font-size: 15px;
-    }
-    .buttonServices{
-        width: 100px;
-        font-size: 12px;
-    }
-
+@media screen and (max-width: 1000px) {
+  .tabla {
+    width: 33%;
+    max-width: none;
+    margin-bottom: 40px;
+    flex-grow: initial;
+  }
+  .tabla h2 {
+    margin-top: 40px;
+  }
+  .tabla h3 {
+    font-size: 15px;
+  }
+  .buttonServices {
+    width: 100px;
+    font-size: 12px;
+  }
 }
 
 /* FIN MODIFICACIONES VICTOR 28 SEPTIEMBRE 2024 */
 
-.sectionGallery{
-    background-color: #b7d3e5;
-    padding: 1% 2% 1%;
+.sectionGallery {
+  background-color: #b7d3e5;
+  padding: 1% 2% 1%;
 }
 
-.sectionTestimony{
+.sectionTestimony {
+  background-color: #e7f0f6;
+  padding: 1% 2% 1%;
+}
+
+.sectionOne {
+  background-color: #b7d3e5;
+  padding: 1% 2% 1%;
+}
+
+.sectionTwo {
+  background-color: #e7f0f6;
+  padding: 1% 2% 1%;
+}
+
+.sectionThree {
+  background-color: #b7d3e5;
+  padding: 1% 2% 2%;
+}
+
+@media (max-width: 742px) {
+  .sectionDescription {
+    padding: 80px 2% 2%;
     background-color: #e7f0f6;
-    padding: 1% 2% 1%;
+  }
 }
 
-.sectionOne{
-    background-color: #b7d3e5;
-    padding: 1% 2% 1%;
+/* Testimonios */
+
+.sectionTestimony {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
 }
 
-.sectionTwo{
-    background-color: #e7f0f6;
-    padding: 1% 2% 1%;
+.sectionTestimony h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-.sectionThree{
-    background-color: #b7d3e5;
-    padding: 1% 2% 2%;
+.slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-
-@media (max-width: 742px){
-
-    .sectionDescription{
-        padding: 80px 2% 2%;
-        background-color: #e7f0f6;
-    }
-    
-
+.testimonials-container {
+  display: flex;
+  transition: transform 0.5s ease;
 }
+
+.testimony {
+  min-width: calc(50% - 20px);
+  box-sizing: border-box;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 10px;
+}
+
+.testimony img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.testimony p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.testimony h3 {
+  font-size: 1.2em;
+  color: #333;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+button.prev {
+  left: 10px;
+  margin-left: 20px;
+}
+
+button.next {
+  right: 10px;
+  margin-right: 10px;
+}
+
+/* Fin testimonios */
