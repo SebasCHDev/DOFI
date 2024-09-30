@@ -473,4 +473,55 @@ button.next {
   margin-right: 10px;
 }
 
+/* AndresP 29/09*/
+.footer {
+  text-align: center;
+  display: flex;
+  margin: 0% 10% 0% 10%;
+  padding: 50px 20px;
+  background-color: #8ca0e2;
+  flex-direction: row;
+}
+.logoEspacio {
+  height: 120px;
+  width: 500px;
+  display: grid;
+}
+.logoFooter {
+  height: 120px;
+  width: 120px;
+  align-items: center;
+  float: left;
+}
+.textosFooter {
+  align-items: center;
+  width: auto;
+  font-size: 26px;
+  font-weight: bold;
+}
+.buttonInformation {
+  display: inline-block;
+  width: 150px;
+  padding: 12px;
+  background-color: #611d99;
+  box-shadow: 2px 2px 3px 0px rgba(216, 75, 252, 0.712);
+  text-decoration: none;
+  color: rgb(211, 235, 235);
+  border-radius: 100px;
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.buttonInformation:hover {
+  background-color: rgba(128, 90, 189, 0.986);
+  box-shadow: 3px 3px 5px 0px rgba(74, 22, 99, 0.616);
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+  transform: scale(1, 1);
+}
+
+/* AndresP 29/09*/
+
 /* Fin testimonios */
