@@ -1,18 +1,19 @@
 body {
   background-color: #fff;
-  height: 4800px;
+  height: auto;
 }
 
-header {
-  position: fixed;
-  width: 100%;
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .mainContainer {
   height: 100%;
   width: 80%;
   display: grid;
-  grid-template-rows: repeat(8, 600px);
+  /* grid-template-rows: repeat(8, 800px); */ 
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -78,11 +79,6 @@ header {
   color: #04a6f7;
 }
 
-/* COLORES BGC SECTION
---color1 { #e7f0f6 };
---color2 { #b7d3e5 };
- */
-
 .sectionDescription {
   padding: 70px 2% 1%;
   background-color: #e7f0f6;
@@ -98,7 +94,132 @@ header {
   padding: 1% 2% 1%;
 }
 
-/* MODIFICACIONES VICTOR 28 SEPTIEMBRE 2024 */
+/* DESCRIPCION */
+
+  /* Estilo general del contenedor */
+  .sectionDescription {
+    padding: 50px 10%;
+    background-color: #f9f9f9;
+    text-align: center;
+    height: 1100px;
+}
+
+#tituloDescripcion {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+/* Estilo del contenedor de la descripción */
+#descripcion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 2px;
+}
+
+/* Estilo de las tarjetas de exposición */
+.exposicion {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exposicion:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para las imágenes dentro de las tarjetas */
+.exposicion img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.exposicion img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.9);
+}
+
+/* Estilo de los títulos dentro de las tarjetas */
+.exposicion h3 {
+    font-size: 1.6rem;
+    color: #0f3477;
+    margin-bottom: 10px;
+    
+}
+
+/* Estilo de las listas en las tarjetas */
+.exposicion ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.exposicion li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #333;
+    padding-left: 20px;
+    position: relative;
+}
+
+.exposicion li:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #084cca;
+}
+
+.exposicion p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 768px) {
+    .sectionDescription {
+        padding: 40px 5%;
+    }
+
+    .exposicion img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    #tituloDescripcion {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+/* FIN DE DESCRIPCION */
+
+/* SERVICIOS */
 
 .subtitleServices {
   background-color: #15b5f5;
@@ -117,7 +238,8 @@ header {
   width: 90%;
   max-width: 900px;
   margin: auto;
-  height: 50vh;
+  /* height: 50vh; */
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,8 +321,9 @@ header {
   background-color: rgb(7, 177, 72);
   box-shadow: 3px 3px 5px 0px rgba(18, 241, 104, 0.616);
   color: white;
-  transition: 0.5 all ease-in-out;
-  transform: scale(1, 1);
+  transition: 0.8 all ease-in-out;
+  transform: scale(1.15, 1.15);
+  transition-duration: 0.5s;
 }
 
 .tabla:hover {
@@ -241,6 +364,8 @@ header {
   background-color: #b7d3e5;
   padding: 1% 2% 1%;
 }
+
+/* CSS Daniela */
 
 .sectionTestimony {
   background-color: #e7f0f6;
