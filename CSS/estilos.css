@@ -1,3 +1,5 @@
+/* UNIVERSAL */
+
 body {
   background-color: #fff;
   height: auto;
@@ -79,22 +81,9 @@ header{
   color: #04a6f7;
 }
 
-.sectionDescription {
-  padding: 70px 2% 1%;
-  background-color: #e7f0f6;
-}
+/* SECTIONS */
 
-.sectionPrice {
-  background-color: #b7d3e5;
-  padding: 1% 2% 1%;
-}
-
-.sectionServices {
-  background-color: #e7f0f6;
-  padding: 1% 2% 1%;
-}
-
-/* DESCRIPCION */
+/* INICIO SECTION DESCRIPTION */
 
   /* Estilo general del contenedor */
   .sectionDescription {
@@ -217,9 +206,19 @@ p {
     }
 }
 
-/* FIN DE DESCRIPCION */
+/* FIN SECTION DESCRIPTION */
 
-/* SERVICIOS */
+/* INICIO SECTION PRICE */
+
+.sectionPrice {
+  background-color: #b7d3e5;
+  padding: 1% 2% 1%;
+}
+
+
+/* FIN SECTION PRICE */
+
+/* INICIO SECTION SERVICES */
 
 .subtitleServices {
   background-color: #15b5f5;
@@ -358,43 +357,19 @@ p {
   }
 }
 
-/* FIN MODIFICACIONES VICTOR 28 SEPTIEMBRE 2024 */
+/* FIN SECTION SERVICES */
+
+/* INICIO SECTION GALLERY */
 
 .sectionGallery {
   background-color: #b7d3e5;
   padding: 1% 2% 1%;
 }
 
-/* CSS Daniela */
 
-.sectionTestimony {
-  background-color: #e7f0f6;
-  padding: 1% 2% 1%;
-}
+/* FIN SECTION GALLERY */
 
-.sectionOne {
-  background-color: #b7d3e5;
-  padding: 1% 2% 1%;
-}
-
-.sectionTwo {
-  background-color: #e7f0f6;
-  padding: 1% 2% 1%;
-}
-
-.sectionThree {
-  background-color: #b7d3e5;
-  padding: 1% 2% 2%;
-}
-
-@media (max-width: 742px) {
-  .sectionDescription {
-    padding: 80px 2% 2%;
-    background-color: #e7f0f6;
-  }
-}
-
-/* Testimonios */
+/* INICIO SECTION TESTIMONY */
 
 .sectionTestimony {
   text-align: center;
@@ -416,7 +391,6 @@ p {
 }
 
 .testimonials-container {
-  display: flex;
   transition: transform 0.5s ease;
 }
 
@@ -429,6 +403,11 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin: 10px;
+  display: none;
+}
+
+.testimony--show{
+  display: block;
 }
 
 .testimony img {
@@ -443,6 +422,7 @@ p {
   font-size: 1.1em;
   margin-bottom: 10px;
   color: #666;
+  padding: 0% 5% 0%;
 }
 
 .testimony h3 {
@@ -468,12 +448,38 @@ button.prev {
   margin-left: 20px;
 }
 
+button.prev:hover{
+  background-color: rgb(128, 0, 105);
+}
+
 button.next {
   right: 10px;
   margin-right: 10px;
 }
 
-/* AndresP 29/09*/
+button.next:hover{
+  background-color: rgb(128, 0, 105);
+}
+
+/* FIN SECTION TESTIMONY */
+
+.sectionOne {
+  background-color: #b7d3e5;
+  padding: 1% 2% 1%;
+}
+
+.sectionTwo {
+  background-color: #e7f0f6;
+  padding: 1% 2% 1%;
+}
+
+.sectionThree {
+  background-color: #b7d3e5;
+  padding: 1% 2% 2%;
+}
+
+/* INICIO FOOTER*/
+
 .footer {
   text-align: center;
   display: flex;
@@ -522,6 +528,13 @@ button.next {
   transform: scale(1, 1);
 }
 
-/* AndresP 29/09*/
+/* FIN FOOTER*/
 
-/* Fin testimonios */
+/* @MEDIA */
+
+@media (max-width: 742px) {
+  .sectionDescription {
+    padding: 80px 2% 2%;
+    background-color: #e7f0f6;
+  }
+}
