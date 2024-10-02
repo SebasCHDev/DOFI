@@ -215,6 +215,17 @@ p {
   padding: 1% 2% 1%;
 }
 
+.priceContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.priceElements{
+  border: solid 2px black;
+  border-radius: 10px;
+}
+
 
 /* FIN SECTION PRICE */
 
