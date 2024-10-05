@@ -1,3 +1,13 @@
+function toggleDescripcion() {
+    var contenido = document.getElementById('contenidoInspiracion');
+    if (contenido.classList.contains('oculto')) {
+        contenido.classList.remove('oculto');
+        contenido.classList.add('visible');
+    } else {
+        contenido.classList.remove('visible');
+        contenido.classList.add('oculto');
+    }
+}
 document.addEventListener("DOMContentLoaded", function() {
     const testimonies = document.querySelectorAll('.testimony');
     const prevButton = document.getElementById('before');
