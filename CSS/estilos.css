@@ -83,14 +83,81 @@ header{
 
 /* SECTIONS */
 
-/* INICIO SECTION DESCRIPTION */
-
   /* Estilo general del contenedor */
-  .sectionDescription {
+.sectionDescription {
     padding: 50px 10%;
     background-color: #f9f9f9;
     text-align: center;
-    height: 1100px;
+}
+
+/* Resaltar el texto en la descripción */
+.resaltado {
+  font-size: 1.2rem;
+  color: #555;
+  background-color: #f1f5fa;
+  padding: 10px;
+  border-left: 5px solid #084cca;
+  margin: 20px 0;
+  line-height: 1.8;
+}
+
+#tituloInspiracion{
+  font-size: 1.8rem;
+  color: #0f3477;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.resaltar-azul {
+  color: #0f3477;
+  font-weight: bold;
+}
+
+.oculto {
+  display: none;
+}
+
+#contenidoInspiracion.oculto {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#contenidoInspiracion.visible {
+  display: block;
+  opacity: 1;
+}
+
+/* Efecto visual en el título al hacer click */
+#tituloInspiracion {
+  cursor: pointer;
+  color:  #0f3477;
+  transition: color 0.3s ease;
+  margin-bottom: 0.2px;
+}
+
+#tituloInspiracion:hover {
+  color: #084cca;
+}
+
+.click-gif {
+  width: 80px; 
+  height: auto;
+  margin-left: 5px; /* Añade el espacio entre el texto y el GIF */
+  margin-right: 20px;
+  vertical-align: middle; 
+  animation: parpadeo 2s infinite; 
+  
+}
+
+/* Animación de parpadeo para la imagen */
+@keyframes parpadeo {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
 }
 
 #tituloDescripcion {
@@ -206,7 +273,7 @@ p {
     }
 }
 
-/* FIN SECTION DESCRIPTION */
+/* FIN DE DESCRIPCION */
 
 /* INICIO SECTION PRICE */
 
