@@ -356,6 +356,7 @@ p {
 
 .sectionTestimony h2 {
   font-size: 2em;
+  margin-top: 6px;
   margin-bottom: 20px;
   color: #333;
 }
@@ -363,7 +364,8 @@ p {
 .slider {
   position: relative;
   overflow: hidden;
-  max-width: 800px;
+  max-width: 100%; /* Cambiar el max-width a 100% */
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -375,11 +377,11 @@ p {
   min-width: calc(50% - 20px);
   box-sizing: border-box;
   padding: 20px;
-  background: #fff;
+  background: rgb(223, 245, 252);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 10px;
+  margin: 10px auto;
   display: none;
 }
 
