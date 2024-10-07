@@ -1,0 +1,91 @@
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.titleContainer {
+    font-size: 1.5em;
+    margin: 5px;
+    background: linear-gradient(90deg,#58abec60,#58acecb9,#1a8ee7ee,#58acecb9,#58abec60);
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.changeTitle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: darkblue;
+}
+
+.titleContainer:hover .originalTitle {
+    opacity: 0;
+}
+
+.titleContainer:hover .changeTitle {
+    opacity: 1;
+}
+
+/* INICIO FOOTER*/
+
+.footer {
+    text-align: center;
+    display: flex;
+    padding: 50px 20px;
+    background-color: #8ca0e2;
+    flex-direction: row;
+}
+
+.logoEspacio {
+    height: 120px;
+    width: 500px;
+    display: grid;
+}
+
+.logoFooter {
+    height: 120px;
+    width: 120px;
+    align-items: center;
+    float: left;
+}
+
+.textosFooter {
+    align-items: center;
+    width: auto;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.buttonInformation {
+    display: inline-block;
+    width: 150px;
+    padding: 12px;
+    background-color: #611d99;
+    box-shadow: 2px 2px 3px 0px rgba(216, 75, 252, 0.712);
+    text-decoration: none;
+    color: rgb(211, 235, 235);
+    border-radius: 100px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.buttonInformation:hover {
+    background-color: rgba(128, 90, 189, 0.986);
+    box-shadow: 3px 3px 5px 0px rgba(74, 22, 99, 0.616);
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+    transform: scale(1, 1);
+}
+
+/* FIN FOOTER*/

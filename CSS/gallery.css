@@ -1,0 +1,251 @@
+body {
+    height: 1000px;
+    width: 100%;
+    display: flexbox;
+    background-color: lightcyan;
+}
+
+
+/* INICIO HEADER */
+
+header {
+    width: 100%;
+}
+
+.container1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.titleContainer {
+    font-size: 1.5em;
+    margin: 5px;
+    background: linear-gradient(90deg, #58abec60, #58acecb9, #1a8ee7ee, #58acecb9, #58abec60);
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.changeTitle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: darkblue;
+}
+
+.titleContainer:hover .originalTitle {
+    opacity: 0;
+}
+
+.titleContainer:hover .changeTitle {
+    opacity: 1;
+}
+
+/* FIN HEADER */
+
+/* INICIO BODY */
+
+.cuadricula {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    margin: 0 10% 10px;
+}
+
+.divGaleria {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divGaleria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#divGaleria1 {
+    cursor: pointer;
+}
+
+#divGaleria1:hover {
+    cursor: pointer;
+}
+
+#divGaleria2 {
+    cursor: pointer;
+}
+
+#divGaleria2:hover {
+    cursor: pointer;
+}
+
+#divGaleria3 {
+    cursor: pointer;
+}
+
+#divGaleria3:hover {
+    cursor: pointer;
+}
+
+#divGaleria4 {
+    cursor: pointer;
+}
+
+#divGaleria4:hover {
+    cursor: pointer;
+}
+
+#divGaleria5 {
+    cursor: pointer;
+}
+
+#divGaleria5:hover {
+    cursor: pointer;
+}
+
+#divGaleria6 {
+    cursor: pointer;
+}
+
+#divGaleria6:hover {
+    cursor: pointer;
+}
+
+#divGaleria7 {
+    cursor: pointer;
+}
+
+#divGaleria7:hover {
+    cursor: pointer;
+}
+
+#divGaleria8 {
+    cursor: pointer;
+}
+
+#divGaleria8:hover {
+    cursor: pointer;
+}
+
+#divGaleria9 {
+    cursor: pointer;
+}
+
+#divGaleria9:hover {
+    cursor: pointer;
+}
+
+#divGaleria10 {
+    cursor: pointer;
+}
+
+#divGaleria10:hover {
+    cursor: pointer;
+}
+
+#divGaleria11 {
+    cursor: pointer;
+}
+
+#divGaleria11:hover {
+    cursor: pointer;
+}
+
+#divGaleria12 {
+    cursor: pointer;
+}
+
+#divGaleria12:hover {
+    cursor: pointer;
+}
+
+#divGaleria13 {
+    cursor: pointer;
+}
+
+#divGaleria13:hover {
+    cursor: pointer;
+}
+
+#divGaleria14 {
+    cursor: pointer;
+}
+
+#divGaleria14:hover {
+    cursor: pointer;
+}
+
+#divGaleria15 {
+    cursor: pointer;
+}
+
+#divGaleria15:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+/* FIN BODY */
+
+/* INICIO FOOTER*/
+
+.footer {
+    text-align: center;
+    display: flex;
+    padding: 50px 20px;
+    background-color: #8ca0e2;
+    flex-direction: row;
+}
+
+.logoEspacio {
+    height: 120px;
+    width: 500px;
+    display: grid;
+}
+
+.logoFooter {
+    height: 120px;
+    width: 120px;
+    align-items: center;
+    float: left;
+}
+
+.textosFooter {
+    align-items: center;
+    width: auto;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.buttonInformation {
+    display: inline-block;
+    width: 150px;
+    padding: 12px;
+    background-color: #611d99;
+    box-shadow: 2px 2px 3px 0px rgba(216, 75, 252, 0.712);
+    text-decoration: none;
+    color: rgb(211, 235, 235);
+    border-radius: 100px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.buttonInformation:hover {
+    background-color: rgba(128, 90, 189, 0.986);
+    box-shadow: 3px 3px 5px 0px rgba(74, 22, 99, 0.616);
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+    transform: scale(1, 1);
+}
+
+/* FIN FOOTER*/
