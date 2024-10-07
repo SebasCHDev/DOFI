@@ -56,142 +56,82 @@ header {
 }
 
 .divGaleria {
-    border: 1px solid black;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: zoom-in;
 }
 
 .divGaleria img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: 1.5px solid mediumpurple;
+    border-radius: 10px;
 }
 
+.textoHover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #1a8ee7ee;
+    width: 100%;
+    height: 70%;
+    margin: 30% 0 0 0;
+    transition: 0.5s ease; 
+    opacity: 0;
+}
 
-#divGaleria1 {
+.divGaleria:hover .textoHover{
+    opacity: 1;
+}
+
+/*.simboloZoom{
+    position: absolute;
+    top: 0;
+    font-size: 40px;
+    color: black;
+    opacity: 0;
+}
+
+.divGaleria:hover .simboloZoom{
+    opacity: 1;
+}*/
+
+.zoom{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.37);
+    justify-content: center;
+}
+
+.zoomContenido{
+    max-width: 90%;
+    max-height: 90%;
+    margin: 5% 20%;
+}
+
+.zoomContenido img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cerrar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: black;
     cursor: pointer;
 }
-
-#divGaleria1:hover {
-    cursor: pointer;
-}
-
-#divGaleria2 {
-    cursor: pointer;
-}
-
-#divGaleria2:hover {
-    cursor: pointer;
-}
-
-#divGaleria3 {
-    cursor: pointer;
-}
-
-#divGaleria3:hover {
-    cursor: pointer;
-}
-
-#divGaleria4 {
-    cursor: pointer;
-}
-
-#divGaleria4:hover {
-    cursor: pointer;
-}
-
-#divGaleria5 {
-    cursor: pointer;
-}
-
-#divGaleria5:hover {
-    cursor: pointer;
-}
-
-#divGaleria6 {
-    cursor: pointer;
-}
-
-#divGaleria6:hover {
-    cursor: pointer;
-}
-
-#divGaleria7 {
-    cursor: pointer;
-}
-
-#divGaleria7:hover {
-    cursor: pointer;
-}
-
-#divGaleria8 {
-    cursor: pointer;
-}
-
-#divGaleria8:hover {
-    cursor: pointer;
-}
-
-#divGaleria9 {
-    cursor: pointer;
-}
-
-#divGaleria9:hover {
-    cursor: pointer;
-}
-
-#divGaleria10 {
-    cursor: pointer;
-}
-
-#divGaleria10:hover {
-    cursor: pointer;
-}
-
-#divGaleria11 {
-    cursor: pointer;
-}
-
-#divGaleria11:hover {
-    cursor: pointer;
-}
-
-#divGaleria12 {
-    cursor: pointer;
-}
-
-#divGaleria12:hover {
-    cursor: pointer;
-}
-
-#divGaleria13 {
-    cursor: pointer;
-}
-
-#divGaleria13:hover {
-    cursor: pointer;
-}
-
-#divGaleria14 {
-    cursor: pointer;
-}
-
-#divGaleria14:hover {
-    cursor: pointer;
-}
-
-#divGaleria15 {
-    cursor: pointer;
-}
-
-#divGaleria15:hover {
-    cursor: pointer;
-}
-
-
-
-
 
 /* FIN BODY */
 
