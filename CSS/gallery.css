@@ -60,7 +60,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: zoom-in;
+    cursor: pointer;
 }
 
 .divGaleria img {
@@ -88,17 +88,23 @@ header {
     opacity: 1;
 }
 
-/*.simboloZoom{
+.simboloZoom{
     position: absolute;
     top: 0;
-    font-size: 40px;
-    color: black;
+    right: 0;
+    margin: 1% 1%;
+    padding: 2%;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    background-color: #1a8ee7ee;
+    cursor: zoom-in;
     opacity: 0;
 }
 
 .divGaleria:hover .simboloZoom{
     opacity: 1;
-}*/
+}
 
 .zoom{
     display: none;

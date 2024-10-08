@@ -2,11 +2,13 @@ let zoom = document.querySelector(".zoom");
 let imgNormal = document.querySelectorAll(".imgNormal");
 let imgGrande = document.getElementById("imgGrande");
 let cerrarBtn = document.querySelector(".cerrar");
+let simboloZoom = document.querySelectorAll(".simboloZoom");
 
-imgNormal.forEach(function(img){
-    img.onclick = function (){
+simboloZoom.forEach(function(icon, index){
+    icon.onclick = function (){
+        let img = imgNormal[index];
         zoom.style.display = "flex";
-        imgGrande.src = this.src;
+        imgGrande.src = img.src;
     }
 })
 
