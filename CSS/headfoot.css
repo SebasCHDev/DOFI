@@ -38,33 +38,59 @@ header {
 /* INICIO FOOTER*/
 
 .footer {
-    text-align: center;
-    display: flex;
     padding: 50px 20px;
     background-color: #8ca0e2;
-    flex-direction: row;
 }
 
+/* Primera fila: logo y texto */
 .logoEspacio {
-    height: 120px;
-    width: 500px;
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.logoFooter {
+.logoFooter img {
     height: 120px;
     width: 120px;
-    align-items: center;
-    float: left;
 }
 
 .textosFooter {
-    align-items: center;
-    width: auto;
     font-size: 26px;
     font-weight: bold;
+    text-align: left;
 }
 
+/* Segunda fila: 4 columnas en una fila */
+.fila2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.seccionesFooter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que las columnas se adapten si la pantalla es pequeña */
+    width: 100%;
+}
+
+.seccionesFooter > div {
+    flex: 1;
+    margin: 0 10px; /* Espacio entre columnas */
+}
+
+.linksRapidos, .recursos, .legal, .redes {
+    text-align: left;
+}
+
+.redes img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+/* Botón de suscripción */
 .buttonInformation {
     display: inline-block;
     width: 150px;
@@ -86,6 +112,24 @@ header {
     color: rgb(0, 0, 0);
     transition: 0.5s;
     transform: scale(1, 1);
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .seccionesFooter {
+        flex-direction: column;
+    }
+
+    .seccionesFooter > div {
+        margin-bottom: 20px;
+    }
+}
+
+/* Tercera fila: Texto centrado */
+.fila3 p {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
 }
 
 /* FIN FOOTER*/

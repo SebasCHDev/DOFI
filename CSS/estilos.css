@@ -35,6 +35,11 @@ body {
   color: #04a6f7;
 }
 
+.iconos {
+  width: 32px;
+  height: 32px;
+}
+
 /* @MEDIA */
 
 @media (max-width: 742px) {
