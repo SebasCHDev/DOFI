@@ -35,6 +35,13 @@ header {
     opacity: 1;
 }
 
+@media (max-width: 768px) {
+    .submenu ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 /* INICIO FOOTER*/
 
 .footer {
