@@ -136,3 +136,28 @@ header {
     background-repeat: no-repeat;
     background-position: center; 
 }
+
+@media (max-width: 768px) {
+    .submenu ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+       #comercio{
+        padding: 0;
+    }
+    
+    .productos{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .titulos{
+        font-size: 20px;
+    }
+
+    .articulos{
+        height: 18 0px;
+    }
+}
