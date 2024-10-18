@@ -4,6 +4,11 @@
 
 
 /* Resaltar el texto en la descripción */
+
+.bienvenida{
+  margin-top: 60px;
+}
+
 .resaltado {
   font-size: 1.2rem;
   color: #555;
@@ -200,18 +205,14 @@ p {
 
 /* INICIO SECTION SERVICES */
 
-.sectionServices{
-  margin: 60px 0 5px;
-}
-
 .subtitleServices {
-  background-color: #15b5f5;
-  color: white;
-  border: 2px solid #1083b1;
-  text-align: center;
+  /* background-color: #15b5f5; */
+  color: #333;
+  /* border: 2px solid #007bff; */
+  text-align:center;
   margin-left: 20%;
   margin-right: 20%;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   padding: 20px;
   font-size: 35px;
   font-weight: bold;
@@ -232,22 +233,21 @@ p {
   width: 29%;
   height: 390px;
   margin: auto;
-  border: 1px solid #1083b1;
-  background-color: rgb(223, 245, 252);
-  box-shadow: 0px 0px 4px 0px #1083b1;
+  /* border: 1px solid #0f3477; */
+  /* box-shadow: 0px 0px 4px 0px #007bff; */
   padding: 15px;
   text-align: center;
   flex-grow: 1;
-  color: #1083b1;
+  color: #007bff;
 }
 
 .tabla>h2 {
-  background-color: rgb(5, 187, 248);
+  background-color: #007bff;
   color: white;
-  text-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.87);
-  border: 2px solid rgb(137, 218, 245);
+  /* text-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.87); */
+  /* border: 2px solid rgb(137, 218, 245); */
   border-radius: 5px;
-  box-shadow: 2px 2px 3px 0px rgb(123, 214, 245);
+  /* box-shadow: 2px 2px 3px 0px rgb(123, 214, 245); */
   font-size: 35px;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -262,7 +262,7 @@ p {
 .tabla img:hover {
   margin-bottom: 5px;
   filter: blur(1);
-  background-color: rgb(1, 1, 214);
+  /* background-color: #0f3477; */
   transition: 1s all ease-in-out;
   transform: scale(1.1, 1.1);
 }
@@ -276,22 +276,26 @@ p {
 .tabla>p {
   display: block;
   margin-bottom: 20px;
-  background-color: rgb(5, 187, 248);
-  border: 2px solid rgb(137, 218, 245);
+  /* background-color: #007bff; */
+  /* border: 2px solid rgb(137, 218, 245); */
   border-radius: 5px;
-  color: white;
-  box-shadow: 2px 2px 3px 0px rgb(123, 214, 245);
+  color: #333;
+  /* box-shadow: 2px 2px 3px 0px rgb(123, 214, 245); */
   padding: 0px 5px 0px;
+}
+
+.tabla>p:hover{
+  color: white;
 }
 
 .buttonServices {
   display: inline-block;
   width: 150px;
   padding: 12px;
-  background-color: #611d99;
-  box-shadow: 2px 2px 3px 0px rgba(216, 75, 252, 0.712);
+  background-color: #0f3477/*  #611d99 */;
+  /* box-shadow: 2px 2px 3px 0px rgba(216, 75, 252, 0.712); */
   text-decoration: none;
-  color: rgb(211, 235, 235);
+  color: white;
   border-radius: 100px;
   text-align: center;
   font-size: 19px;
@@ -300,8 +304,8 @@ p {
 }
 
 .buttonServices:hover {
-  background-color: rgb(7, 177, 72);
-  box-shadow: 3px 3px 5px 0px rgba(18, 241, 104, 0.616);
+  background-color: #6f7274 /* rgb(7, 177, 72) */;
+  /* box-shadow: 3px 3px 5px 0px rgba(18, 241, 104, 0.616); */
   color: white;
   transition: 0.8 all ease-in-out;
   transform: scale(1.15, 1.15);
@@ -309,7 +313,7 @@ p {
 }
 
 .tabla:hover {
-  background: #084cca;
+  background: #0f3477;
   color: #f1f1f2;
   transition: 0.5s all;
   transform: scale(1, 1);
@@ -364,7 +368,7 @@ p {
 .slider {
   position: relative;
   overflow: hidden;
-  max-width: 100%; /* Cambiar el max-width a 100% */
+  max-width: 100%;
   width: 90%;
   margin: 0 auto;
 }
@@ -377,9 +381,8 @@ p {
   min-width: calc(50% - 20px);
   box-sizing: border-box;
   padding: 20px;
-  background: rgb(223, 245, 252);
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   text-align: center;
   margin: 10px auto;
   display: none;
@@ -415,7 +418,7 @@ button.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #007bff;
+  background-color: #0f3477;
   color: white;
   border: none;
   padding: 10px;
@@ -429,7 +432,7 @@ button.prev {
 }
 
 button.prev:hover {
-  background-color: rgb(128, 0, 105);
+  background-color: #555;
 }
 
 button.next {
@@ -438,7 +441,7 @@ button.next {
 }
 
 button.next:hover {
-  background-color: rgb(128, 0, 105);
+  background-color: #555;
 }
 
 /* FIN SECTION TESTIMONY */

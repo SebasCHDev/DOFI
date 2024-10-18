@@ -1,15 +1,13 @@
 /* UNIVERSAL */
 
 body {
-  background-color: lightcyan;
   height: auto;
 }
 
 .mainContainer {
   height: 100%;
-  width: 90%;
+  width: 100%;
   display: grid;
-  margin: 0 5% 0;
 }
 
 .submenu ul {
@@ -17,7 +15,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
-  background-color: #cdd1d479;
+  background-color: #cdd1d4;
   margin: 5px;
 }
 
@@ -32,7 +30,7 @@ body {
 }
 
 .submenu a:hover {
-  color: #04a6f7;
+  color: #0f3477;
 }
 
 .iconos {
