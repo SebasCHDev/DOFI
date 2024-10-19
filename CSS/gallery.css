@@ -151,12 +151,6 @@ header {
     flex-direction: row;
 }
 
-.logoEspacio {
-    height: 120px;
-    width: 500px;
-    display: grid;
-}
-
 .logoFooter {
     height: 120px;
     width: 120px;

@@ -322,44 +322,47 @@
       </span>
       <div class="columnaFooter">
         <p style="text-align: left">¿Quieres conocer aún más de nosotros?</p>
-        <a class="buttonInformation" href="#">Da click aquí</a>
+        <a class="buttonInformation2" href="#">Da click aquí</a>
       </div>
     </div>
-
+    <hr>
     <div class="fila2">
       <div class="seccionesFooter">
         <div class="linksRapidos">
-          <h4>Enlaces Rápidos</h4>
+          <h4>ENLACES RÁPIDOS</h4>
           <ul>
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/AcercaDe">Acerca de Nosotros</a></li>
+            <li><a href="/dofi.html">Inicio</a></li>
             <li><a href="/faq">FAQ</a></li>
             <li><a href="/contacto">Contáctanos</a></li>
           </ul>
         </div>
         <div class="recursos">
-          <h4>Recursos</h4>
+          <h4>RECURSOS</h4>
           <ul>
             <li><a href="/guides">Guías</a></li>
             <li><a href="/manuals">Manuales de Productos</a></li>
             <li><a href="/faq">Preguntas Técnicas</a></li>
           </ul>
-          <h4>Suscríbete</h4>
-          <form action="/subscribe" method="post">
+        </div>
+
+        <div class="redes">
+          <h4>SUSCRÍBETE</h4>
+          <!--  action="/subscribe" method="post" -->
+          <form>
             <input type="email" placeholder="Tu correo electrónico" required />
-            <button class="buttonInformation" type="submit">Suscribirse</button>
+            <button class="buttonInformation3" onclick="botonSuscripcion()" type="submit">Suscribirse</button>
           </form>
         </div>
 
         <div class="legal">
-          <ul>
-            <li><a href="/tyc">Términos y Condiciones</a></li>
-
-          </ul>
+          
+            <!-- <a href="/tyc">TÉRMINOS Y CONDICIONES</a> -->
+            <h4><a href="/tyc">TÉRMINOS Y CONDICIONES</a></h4>
+          
         </div>
 
         <div class="redes">
-          <h4>Síguenos</h4>
+          <h4>SÍGUENOS</h4>
           <a href="#"><img src="IMAGES/Facebook.ico" alt="Facebook" class="iconos" /></a>
           <a href="#"><img src="IMAGES/Twitter.ico" alt="X" class="iconos" /></a>
           <a href="#"><img src="IMAGES/Instagram.ico" alt="Instagram" class="iconos" /></a>
@@ -368,14 +371,17 @@
         </div>
       </div>
     </div>
-    <div class="fila3"></div>
-    <p>&copy; 2024 DOFI. Todos los derechos reservados.</p>
+    <hr>
+    <div class="fila3">
+      <p>&copy; 2024 DOFI. Todos los derechos reservados.</p>
+    </div>
     </div>
   </footer>
   <script src="./JS/script.js"></script>
   <script src="./JS/testimony.js"></script>
   <script src="./JS/comercio.js"></script>
   <script src="./JS/gallery.js"></script>
+  <script src="./JS/footer.js"></script>
 </body>
 
 </html>
