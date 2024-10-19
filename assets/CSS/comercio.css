@@ -1,5 +1,4 @@
 header {
-    /*position: fixed;*/
     width: 100%;
     z-index: 1000;
 }
@@ -70,11 +69,12 @@ header {
 }
 
 #menu {
-    /*border: solid black 1px;*/
+    /* border: solid black 1px; */
     width: 15%;
-    height: 1000px;
+    height: 500px;
     float: left;
-    position: fixed;
+    position: sticky;
+    top: 10%;
 }
 
 #principal{
@@ -110,28 +110,109 @@ header {
 }
 
 #cortina1{
-    background-image: url("C:/Users/kelly/Documents/DOFI/IMAGES/cortina.jpg");
+    background-image: url("/IMAGES/cortina.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #cortina1:hover{
-    background-image: url("C:/Users/kelly/Documents/DOFI/IMAGES/cortinaHover.jpg");
+    background-image: url("/IMAGES/cortinaHover.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #iluminacion1{
-    background-image: url("C:/Users/kelly/Documents/DOFI/IMAGES/iluminacion.jpg");
+    background-image: url("/IMAGES/iluminacion.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
 }
 
 #iluminacion1:hover{
-    background-image: url("C:/Users/kelly/Documents/DOFI/IMAGES/iluminacionHover.jpg");
+    background-image: url("/IMAGES/iluminacionHover.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+#cortina2{
+    background-image: url("/IMAGES/cortina.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#cortina2:hover{
+    background-image: url("/IMAGES/cortinaHover.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#iluminacion2{
+    background-image: url("/IMAGES/iluminacion.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+#iluminacion2:hover{
+    background-image: url("/IMAGES/iluminacionHover.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+#cortina3{
+    background-image: url("/IMAGES/cortina.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#cortina3:hover{
+    background-image: url("/IMAGES/cortinaHover.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#iluminacion3{
+    background-image: url("/IMAGES/iluminacion.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+#iluminacion3:hover{
+    background-image: url("/IMAGES/iluminacionHover.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+#cortina4{
+    background-image: url("/IMAGES/cortina.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#cortina4:hover{
+    background-image: url("/IMAGES/cortinaHover.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#iluminacion4{
+    background-image: url("/IMAGES/iluminacion.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+#iluminacion4:hover{
+    background-image: url("/IMAGES/iluminacionHover.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 

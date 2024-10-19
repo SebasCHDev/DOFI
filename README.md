@@ -5,4 +5,5 @@ Proyecto final Talento Tech - Explorador
 --color1 { #e7f0f6 };
 --color2 { #b7d3e5 };
 --color3 { #aa0000ff};
+--color footer {#611d99};
  */

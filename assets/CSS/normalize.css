@@ -1,5 +1,4 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
 /* Document
    ========================================================================== */
 
@@ -11,6 +10,7 @@
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    font-family: sans-serif;
   }
   
   /* Sections
@@ -63,7 +63,7 @@
    */
   
   pre {
-    font-family: monospace, monospace; /* 1 */
+    font-family: sans-serif; /* 1 */
     font-size: 1em; /* 2 */
   }
   
@@ -106,7 +106,7 @@
   code,
   kbd,
   samp {
-    font-family: monospace, monospace; /* 1 */
+    font-family: sans-serif; /* 1 */
     font-size: 1em; /* 2 */
   }
   

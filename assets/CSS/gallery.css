@@ -1,48 +1,56 @@
 body {
     height: 1000px;
     width: 100%;
-    display: flexbox;
-    background-color: lightcyan;
 }
-
 
 /* INICIO HEADER */
 
 header {
-    width: 100%;
+    width: 80%;
+    z-index: 1000;
+    height: 80px;
 }
 
 .container1 {
     text-align: center;
     margin-bottom: 10px;
+    height: inherit;
+    background-color: #611d99;
 }
 
 .titleContainer {
-    font-size: 1.5em;
+    font-size: 2em;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    color: white;
+    margin: 0;
+}
+
+.submenu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #cdd1d4;
     margin: 5px;
-    background: linear-gradient(90deg, #58abec60, #58acecb9, #1a8ee7ee, #58acecb9, #58abec60);
-    position: relative;
-    text-align: center;
-    cursor: pointer;
-}
-
-.changeTitle {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    color: darkblue;
-}
-
-.titleContainer:hover .originalTitle {
-    opacity: 0;
-}
-
-.titleContainer:hover .changeTitle {
-    opacity: 1;
-}
-
+  }
+  
+  .submenu li {
+    margin: 0 50px;
+  }
+  
+  .submenu a {
+    text-decoration: none;
+    color: #444242;
+    font-size: 1em;
+  }
+  
+  .submenu a:hover {
+    color: #0f3477;
+  }
+  
 /* FIN HEADER */
 
 /* INICIO BODY */
@@ -52,7 +60,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 10px;
-    margin: 0 10% 10px;
+    margin: 50px 10%;
 }
 
 .divGaleria {
@@ -141,51 +149,3 @@ header {
 
 /* FIN BODY */
 
-/* INICIO FOOTER*/
-
-.footer {
-    text-align: center;
-    display: flex;
-    padding: 50px 20px;
-    background-color: #8ca0e2;
-    flex-direction: row;
-}
-
-.logoFooter {
-    height: 120px;
-    width: 120px;
-    align-items: center;
-    float: left;
-}
-
-.textosFooter {
-    align-items: center;
-    width: auto;
-    font-size: 26px;
-    font-weight: bold;
-}
-
-.buttonInformation {
-    display: inline-block;
-    width: 150px;
-    padding: 12px;
-    background-color: #611d99;
-    box-shadow: 2px 2px 3px 0px rgba(216, 75, 252, 0.712);
-    text-decoration: none;
-    color: rgb(211, 235, 235);
-    border-radius: 100px;
-    text-align: center;
-    font-size: 19px;
-    font-weight: bold;
-    margin: auto;
-}
-
-.buttonInformation:hover {
-    background-color: rgba(128, 90, 189, 0.986);
-    box-shadow: 3px 3px 5px 0px rgba(74, 22, 99, 0.616);
-    color: rgb(0, 0, 0);
-    transition: 0.5s;
-    transform: scale(1, 1);
-}
-
-/* FIN FOOTER*/
