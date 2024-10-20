@@ -4,47 +4,167 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOFI - Domótica Optimizada para un Futuro Inteligente</title>
-    <link rel="shortcut icon" href="IMAGES/Logo.ico" />
-    <link rel="stylesheet" href="/assets/CSS/normalize.css" />
-    <link rel="stylesheet" href="/assets/CSS/estilos.css" />
-    <link rel="stylesheet" href="/assets/CSS/header.css" />
-    <link rel="stylesheet" href="/assets/CSS/footer.css" />
-    <link rel="stylesheet" href="/assets/CSS/sections.css" />
-    <link rel="stylesheet" href="/assets/CSS/carrusel.css" />
+    <link rel="stylesheet" href="/assets/CSS/guides.css">
+    <link rel="stylesheet" href="/assets/CSS/normalize.css">
+    <link rel="stylesheet" href="/assets/CSS/footer.css">
   </head>
+
   <body>
     <header>
       <nav class="container1">
         <h1 class="titleContainer">
           <span class="originalTitle">DOFI</span>
-          <span class="changeTitle"
-            >Domótica Optimizada para un Futuro Inteligente</span
-          >
+          <span class="changeTitle">Domótica Optimizada para un Futuro Inteligente</span>
         </h1>
         <section class="submenu">
           <ul>
-            <li>
-              <a href="#inicio"><strong>Inicio</strong></a>
-            </li>
-            <li>
-              <a href="#opcion2"><strong>¿Quienes somos?</strong></a>
-            </li>
-            <li>
-              <a href="gallery.html" target="_blank"
-                ><strong>Galería</strong></a
-              >
-            </li>
-            <li>
-              <a href="#opcion3"><strong>Acerca de</strong></a>
-            </li>
-            <li>
-              <a href="comercio.html" target="_blank"
-                ><strong>Automatización</strong></a
-              >
-            </li>
+            <li><a href="dofi.html" target="_blank"><strong>Inicio</strong></a></li>
+            <li><a href="#opcion2"><strong>¿Quienes somos?</strong></a></li>
+            <li><a href="gallery.html" target="_blank"><strong>Galería</strong></a></li>
+            <li><a href="#opcion3"><strong>Acerca de</strong></a></li>
+            <li><a href="#opcion4" target="_blank"><strong>Automatización</strong></a></li>
           </ul>
         </section>
       </nav>
     </header>
-  </body>
+
+
+    <section id="Guias y manuales">
+      <nav id="menu">
+        <ul id="categorias-list">
+          <li>
+            <button class="categoria-btn">
+              <span class="toggle-arrow"> &#9658 </span> Productos
+            </button>
+            <ul class="items-list">
+              <li class="producto-item" data-producto="bombon">Bombón</li>
+              <li class="producto-item" data-producto="papitas">Papitas</li>
+              <li class="producto-item" data-producto="galletas">Galletas</li>
+            </ul>
+          </li>
+          <li>
+            <button class="categoria-btn">
+              <span class="toggle-arrow"> &#9658 </span> Cliente
+            </button>
+            <ul class="items-list">
+                <li>Mary</li>
+                <li>Felipe</li>
+            </ul>
+          </li>
+        </ul>
+        
+
+
+
+        <div id="producto-info" class="hidden">
+          <h2 id="producto-titulo"></h2>
+          <img id="producto-imagen" src="" alt="" class="producto-imagen">
+          <p id="producto-descripcion"></p>
+          <div id="producto-links">
+              <a id="producto-guia" href="#" target="_blank">Guía</a> |
+              <a id="producto-manual" href="#" target="_blank">Manual</a>
+          </div>
+      </div>
+        
+
+
+
+
+
+      </nav>
+      <main id="principal">
+          <div class="productos">
+              <h1 class="titulos">Cortinas Inteligentes</h1>
+              <article class="articulos">
+                  <div id="cortina1"></div>
+                  <p class="descripcion">Descripción</p>                    
+              </article>
+              <article class="articulos">
+                  <div id="cortina2"></div>
+                  <p class="descripcion">Descripción</p>
+              </article>
+              <article class="articulos">
+                  <div id="cortina3"></div>
+                  <p class="descripcion">Descripción</p>
+              </article>
+              <article class="articulos">
+                  <div id="cortina4"></div>
+                  <p class="descripcion">Descripción</p>
+              </article>
+          </div>
+      </main>
+    </section>
+
+
+
+
+
+
+
+    <footer class="footer">
+      <div class="logoEspacio">
+        <span class="logoFooter">
+          <img src="/assets/IMAGES/LogoMonocromatico.png" alt="Domótica optimizada para un futuro inteligente" width="120"
+            height="120" />
+        </span>
+        <div class="columnaFooter">
+          <p style="text-align: left">¿Quieres conocer aún más de nosotros?</p>
+          <a class="buttonInformation2" href="#">Da click aquí</a>
+        </div>
+      </div>
+      <hr>
+      <div class="fila2">
+        <div class="seccionesFooter">
+          <div class="linksRapidos">
+            <h4>ENLACES RÁPIDOS</h4>
+            <ul>
+              <li><a href="/assets/dofi.html">Inicio</a></li>
+              <li><a href="/assets/faq">FAQ</a></li>
+              <li><a href="/assets/contacto">Contáctanos</a></li>
+            </ul>
+          </div>
+          <div class="recursos">
+            <h4>RECURSOS</h4>
+            <ul>
+              <li><a href="/pages/guides.html">Guías y manuales</a></li>
+              <li><a href="/pages/faq">Preguntas Técnicas</a></li>
+            </ul>
+          </div>
+  
+          <div class="redes">
+            <h4>SUSCRÍBETE</h4>
+            <!--  action="/subscribe" method="post" -->
+            <form>
+              <input type="email" placeholder="Tu correo electrónico" required />
+              <button class="buttonInformation3" onclick="botonSuscripcion()" type="submit">Suscribirse</button>
+            </form>
+          </div>
+  
+          <div class="legal">
+            
+              <!-- <a href="/tyc">TÉRMINOS Y CONDICIONES</a> -->
+              <h4><a href="/pages/tyc">TÉRMINOS Y CONDICIONES</a></h4>
+            
+          </div>
+  
+          <div class="redes">
+            <h4>SÍGUENOS</h4>
+            <a href="#"><img src="/assets/IMAGES/Facebook.ico" alt="Facebook" class="iconos" /></a>
+            <a href="#"><img src="/assets/IMAGES/Twitter.ico" alt="X" class="iconos" /></a>
+            <a href="#"><img src="/assets/IMAGES/Instagram.ico" alt="Instagram" class="iconos" /></a>
+            <a href="#"><img src="/assets/IMAGES/LinkedIn.ico" alt="LinkedIn" class="iconos" /></a>
+            <a href="#"><img src="/assets/IMAGES/TikTok.ico" alt="TikTok" class="iconos" /></a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="fila3">
+        <p>&copy; 2024 DOFI. Todos los derechos reservados.</p>
+      </div>
+      </div>
+    </footer>
+
+</body>
+
+<script src="/assets/JS/guides.js"></script>
 </html>
