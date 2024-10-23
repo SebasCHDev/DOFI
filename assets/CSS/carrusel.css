@@ -116,7 +116,7 @@ a{
     border-radius: 20px;
 }
 
-.thumbnail .item content{
+.thumbnail .item .content{
     position: absolute; /* para mover la position. */
     bottom: 10px;
     left: 10px;
@@ -137,27 +137,32 @@ a{
     width: 300px;
     max-width: 30%; 
     display:flex; /* para que ambos botones esten en la misma fila. */
-    gap: 10px;
+    gap: 25px;
     align-items: center;
 }
 
 .arrows button{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background-color: #eee4; /*  el 4 sirve para blur transparencia. */
+    background-color: rgba(2, 133, 255, 0.705); /*  el 4 sirve para blur transparencia. */
     border: none;
     font-family: monospace;
     color: #fff;
+    border: 3px solid #ffffff;
     font-weight: bold;
-    font-size: large;
-    transition: .5s; /* para cuando haya hover haya efecto. */
+    font-size: larger;
+    transition: .2s ease-in-out; /* para cuando haya hover haya efecto. */
     z-index: 100;
 }
 
 .arrows button:hover{
     background-color: #eee;
-    color: #555;
+    border: 2px solid #0d7cd6;
+    color: #0d7cd6;
+    font-weight: bolder;
+    padding: 10px;
+    cursor:pointer;
 }
 /* estipular que el item en la primer posicion siempre sera el item que esta en estado activo */
 .carousel .list .item:nth-child(1){
@@ -194,4 +199,103 @@ a{
 
 .carousel .list .item:nth-child(1) .buttons{
     animation-delay: 1.8s;
+}
+/* contenido nuevo */
+/* Se agrega la clase next a div carousel para aplicar efecto de next alargando la imagen thumbnail con selectores */
+
+.carousel.next .list .item:nth-child(1) img{
+    /* convierte la imagen de fondo actual en thumbnail */
+    width: 150px;
+    height: 220px;
+    /* superponer el fondo al thumbnail numero 1*/
+    position: absolute;
+    left: 50%;
+    bottom:50px;
+    border-radius:20px;
+    animation: showImage 0.5s linear 1 forwards;
+}
+/* animacion imagen fondo a thumbnail */
+@keyframes showImage{
+    to{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+/* cuando una imagen sea activada se debe mover el thumbnail al final de la fila  minuto 14:29 se mueve thumbnail 1 de html al final de los thumbnails*/
+.carousel.next .thumbnail .item:nth-last-child(1){
+    /* efecto desaparecer el ultimo thumbnail */
+    width: 0;
+    overflow: hidden; /* con el width desaparece el item, pero el contenido sigue visible, con overflow se oculta el texto */
+    animation: showThumbnail .5s linear 1 forwards;
+}
+@keyframes showThumbnail{
+    to{
+        width: 150px;
+    }
+}
+
+.carousel.next .thumbnail{
+    /* cuando usuario de click en next */
+    transform: translateX(150px);
+    animation: transformThumbnail .5s linear 1 forwards;
+}
+@keyframes transformThumbnail{
+    to{
+        transform: translateX(0);
+    }
+}
+/* efecto prev click cuando el usuario hace click en previous button se agrega la clase a carousel prev.*/
+.carousel.prev .list .item:nth-child(2){
+    z-index: 2;/* para que sea visible el segundo item se aumenta su valor z index.*/
+}
+.carousel.prev .list .item:nth-child(2) img{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    animation: outImage .5s linear 1 forwards;
+}
+@keyframes outImage{
+    to{
+        width: 150px;
+        height: 220px;
+        border-radius: 20px;
+        left: 50%;
+        bottom: 50px;
+    }
+}
+/* cuando el usuario presiona back, haremos el inverso al next, el fondo regresa a thumbnail */
+.carousel.prev .thumbnail .item:nth-child(1){
+    width: 0;
+    overflow:hidden;
+    opacity: 0;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+
+/* cuando usuario presione back button oculta el contenido que predomina */
+.carousel.prev .list .item:nth-child(2) .author,
+.carousel.prev .list .item:nth-child(2) .title,
+.carousel.prev .list .item:nth-child(2) .topic,
+.carousel.prev .list .item:nth-child(2) .desc,
+.carousel.prev .list .item:nth-child(2) .buttons{
+    animation: contentOut 1.5s linear 1 forwards;
+}
+@keyframes contentOut{
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+/* responsive */
+@media screen and (max-width: 678px){
+    .carousel .list .item .content{
+        padding-right:0;
+    }
+    .carousel .list .item .content .title{
+        font-size: 30px;
+    }
 }
