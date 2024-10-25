@@ -4,7 +4,7 @@ const productosInfo = {
             titulo: "Cortina domótica ABALON",
             descripcion: "Compatible con Amazon Alexa, Google Home e IFTTT",
             imagen: "https://domoticasa.net/wp-content/webpc-passthru.php?src=https://domoticasa.net/wp-content/uploads/2020/08/ABALON-768x704.jpg&nocache=1",
-            guia: "https://example.com/guia-bombon-chocolate",
+            guia: "/assets/GUIAS/guia_cortina_abalon.pdf",
             manual: "https://example.com/manual-bombon-chocolate"
         },
         {
