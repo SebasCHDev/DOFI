@@ -12,19 +12,22 @@ header {
 .titleContainer {
     font-size: 1.5em;
     margin: 5px;
-    background: linear-gradient(90deg,#58abec60,#58acecb9,#1a8ee7ee,#58acecb9,#58abec60);
+    background: transparent; /* modificar color a gusto */
     position: relative;
     text-align: center;
     cursor: pointer;
 }
 
+.originalTitle{
+    color: white;
+}
 .changeTitle {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.5s ease;
-    color: darkblue;
+    color: white;
 }
 
 .titleContainer:hover .originalTitle {

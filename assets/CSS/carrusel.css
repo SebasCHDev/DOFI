@@ -54,10 +54,14 @@ a{
     letter-spacing: 5px;
 }
 
-.carousel .list .item .content .title,
-.carousel .list .item .content .topic{
+.carousel .list .item .content .title {
     font-weight: bold;
     font-size: 3em;
+}
+
+.carousel .list .item .content .topic {
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 .carousel .list .item .content .topic{
@@ -67,7 +71,7 @@ a{
 .carousel .list .item .content .desc{
     margin-top: 15px;
     color:white;
-    font-size: 1.6em;
+    font-size: 1.2em;
 }
 
 .carousel .list .item .content .buttons{
