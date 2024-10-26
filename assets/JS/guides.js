@@ -110,5 +110,5 @@ categoriaBtns.forEach(btn => {
             itemsList.style.display = "block";
             arrow.innerHTML = '&#9660;'; // Triángulo apuntando hacia abajo
         }
-    });
+    })
 });
