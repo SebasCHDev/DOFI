@@ -30,7 +30,8 @@ body {
 }
 
 .submenu a:hover {
-  color: #0f3477;
+  color: #2156b8;
+  text-decoration: underline;
 }
 
 .iconos {
