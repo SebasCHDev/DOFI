@@ -112,3 +112,19 @@ categoriaBtns.forEach(btn => {
         }
     })
 });
+
+// Mostrar secciones
+
+function mostrarSeccion() {
+    const contenidoPrincipal = document.getElementById("contPrincipal");
+    const contenidoCortinas = document.getElementById("seccionCortinas");
+    const contenidoLuces = document.getElementById("seccionLuces");
+
+    if (contenidoPrincipal.style.display === "none") {
+        contenidoPrincipal.style.display = "block";
+        contenidoCortinas.style.display = "none";
+    } else {
+        contenidoPrincipal.style.display = "none";
+        contenidoCortinas.style.display = "block";
+    }
+}
