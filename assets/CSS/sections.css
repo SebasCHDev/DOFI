@@ -1,8 +1,5 @@
 /* SECTIONS */
 
-/* Estilo general del contenedor */
-
-
 /* Resaltar el texto en la descripción */
 
 .bienvenida{
@@ -342,8 +339,9 @@ p {
 .sectionTestimony {
   text-align: center;
   padding: 30px 10px;
-  background-color: #f4f4f4;
+  background-color: white;
   height: 600px;
+  margin: 20px 0 0;
 }
 
 .sectionTestimony h2 {
@@ -379,6 +377,7 @@ p {
 .testimony--show {
   display: block;
   width: 100%;
+  border: 1px solid gray;
 }
 
 .testimony img {
