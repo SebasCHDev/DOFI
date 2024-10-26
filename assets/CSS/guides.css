@@ -110,109 +110,109 @@ header {
 }
 
 #cortina1{
-    background-image: url("C:/Users/kelly/Documents/DOFI/assets/IMAGES/cortina.jpg");
+    background-image: url("/assets/IMAGES/cortina.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #cortina1:hover{
-    background-image: url("C:/Users/kelly/Documents/DOFI/assets/IMAGES/cortinaHover.jpg");
+    background-image: url("/assets/IMAGES/cortinaHover.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #iluminacion1{
-    background-image: url("C:/Users/kelly/Documents/DOFI/assets/IMAGES/iluminacion.jpg");
+    background-image: url("/assets/IMAGES/iluminacion.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
 }
 
 #iluminacion1:hover{
-    background-image: url("C:/Users/kelly/Documents/DOFI/assets/IMAGES/iluminacionHover.jpg");
+    background-image: url("/assets/IMAGES/iluminacionHover.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
 }
 #cortina2{
-    background-image: url("/IMAGES/cortina.jpg");
+    background-image: url("/assets/IMAGES/cortina.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #cortina2:hover{
-    background-image: url("/IMAGES/cortinaHover.jpg");
+    background-image: url("/assets/IMAGES/cortinaHover.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #iluminacion2{
-    background-image: url("/IMAGES/iluminacion.jpg");
+    background-image: url("/assets/IMAGES/iluminacion.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
 }
 
 #iluminacion2:hover{
-    background-image: url("/IMAGES/iluminacionHover.jpg");
+    background-image: url("/assets/IMAGES/iluminacionHover.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
 }
 #cortina3{
-    background-image: url("/IMAGES/cortina.jpg");
+    background-image: url("/assets/IMAGES/cortina.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #cortina3:hover{
-    background-image: url("/IMAGES/cortinaHover.jpg");
+    background-image: url("/assets/IMAGES/cortinaHover.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #iluminacion3{
-    background-image: url("/IMAGES/iluminacion.jpg");
+    background-image: url("/assets/IMAGES/iluminacion.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
 }
 
 #iluminacion3:hover{
-    background-image: url("/IMAGES/iluminacionHover.jpg");
+    background-image: url("/assets/IMAGES/iluminacionHover.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
 }
 #cortina4{
-    background-image: url("/IMAGES/cortina.jpg");
+    background-image: url("/assets/IMAGES/cortina.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #cortina4:hover{
-    background-image: url("/IMAGES/cortinaHover.jpg");
+    background-image: url("/assets/IMAGES/cortinaHover.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #iluminacion4{
-    background-image: url("/IMAGES/iluminacion.jpg");
+    background-image: url("/assets/IMAGES/iluminacion.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
 }
 
 #iluminacion4:hover{
-    background-image: url("/IMAGES/iluminacionHover.jpg");
+    background-image: url("/assets/IMAGES/iluminacionHover.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
@@ -224,7 +224,7 @@ header {
         flex-wrap: wrap;
     }
     
-       #comercio{
+#comercio{
         padding: 0;
     }
     
