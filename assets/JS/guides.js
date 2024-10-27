@@ -113,6 +113,8 @@ categoriaBtns.forEach(btn => {
     })
 });
 
+//Cambio de secciones
+
 function mostrarSeccion(seccionId){
     const contenidoPrincipal = document.getElementById("contPrincipal");
     const secciones = ['seccionCortinas', 'seccionInterruptores', 'seccionCamaras', 'seccionLuces'];
