@@ -143,100 +143,62 @@ header {
     grid-template-rows: repeat(2, 58% 42%);
 }
 
-#cortinaA{
-    background-image: url("/assets/IMAGES/motorCortina.jpg");
+.imgZoom{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    cursor: zoom-in;
+    position: relative;
+    transition: 0.3s ease;
+    display: inline-block;
 }
 
-#cortinaA:hover{
-    background-image: url("/assets/IMAGES/cortinaHover.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+#cortinaA{
+    background-image: url("/assets/IMAGES/motorCortina.jpg");
+}
+
+#cortinaB{
+    background-image: url("/assets/IMAGES/motorCortina.jpg");
+}
+
+#cortinaC{
+    background-image: url("/assets/IMAGES/motorCortina.jpg");
+}
+
+#iluminacionA{
+    background-image: url("/assets/IMAGES/iluminacion.jpg");
+}
+
+#iluminacionB{
+    background-image: url("/assets/IMAGES/iluminacion.jpg");
+}
+
+#iluminacionC{
+    background-image: url("/assets/IMAGES/iluminacion.jpg");
 }
 
 #cortina1{
     background-image: url("/assets/IMAGES/cortina.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-#cortina1:hover{
-    background-image: url("/assets/IMAGES/cortinaHover.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+#cortina2{
+    background-image: url("/assets/IMAGES/cortina.jpg");
+}
+
+#cortina3{
+    background-image: url("/assets/IMAGES/cortina.jpg");
 }
 
 #iluminacion1{
     background-image: url("/assets/IMAGES/iluminacion.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; 
-}
-
-#iluminacion1:hover{
-    background-image: url("/assets/IMAGES/iluminacionHover.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; 
-}
-#cortina2{
-    background-image: url("/assets/IMAGES/cortina.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#cortina2:hover{
-    background-image: url("/assets/IMAGES/cortinaHover.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 #iluminacion2{
     background-image: url("/assets/IMAGES/iluminacion.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; 
-}
-
-#iluminacion2:hover{
-    background-image: url("/assets/IMAGES/iluminacionHover.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; 
-}
-#cortina3{
-    background-image: url("/assets/IMAGES/cortina.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#cortina3:hover{
-    background-image: url("/assets/IMAGES/cortinaHover.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 #iluminacion3{
     background-image: url("/assets/IMAGES/iluminacion.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; 
-}
-
-#iluminacion3:hover{
-    background-image: url("/assets/IMAGES/iluminacionHover.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; 
 }
 
 .descripcion{
