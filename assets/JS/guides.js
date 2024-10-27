@@ -113,20 +113,23 @@ categoriaBtns.forEach(btn => {
     })
 });
 
-// Mostrar secciones
-
-function mostrarSeccion() {
+function mostrarSeccion(seccionId){
     const contenidoPrincipal = document.getElementById("contPrincipal");
-    const contenidoCortinas = document.getElementById("seccionCortinas");
-    const contenidoLuces = document.getElementById("seccionLuces");
+    const secciones = ['seccionCortinas', 'seccionInterruptores', 'seccionCamaras', 'seccionLuces'];
 
-    if (contenidoPrincipal.style.display === "none") {
-        contenidoPrincipal.style.display = "block";
-        contenidoCortinas.style.display = "none";
+    secciones.forEach(id => {
+        const contenidoSecundario = document.getElementById(id);
+        contenidoSecundario.style.display = 'none';
+    });
+    
+    if (seccionId === 'contPrincipal') {
+        contenidoPrincipal.style.display = 'block';
     } else {
-        contenidoPrincipal.style.display = "none";
-        contenidoCortinas.style.display = "block";
+        contenidoPrincipal.style.display = 'none';
+        const contenidoSecundarioSeleccionado = document.getElementById(seccionId);
+        contenidoSecundarioSeleccionado.style.display = 'block';
     }
+
 }
 
 //zoom en imagen

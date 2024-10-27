@@ -92,6 +92,14 @@ header {
     display: none;
 }
 
+#seccionInterruptores{
+    display: none;
+}
+
+#seccionCamaras{
+    display: none;
+}
+
 #seccionLuces{
     display: none;
 }
@@ -138,12 +146,12 @@ header {
 .articulos{
     display: grid;
     border: solid gray 1px;
-    overflow: hidden;
     border-radius: 10px;
     grid-template-rows: repeat(2, 58% 42%);
 }
 
 .imgZoom{
+    overflow: hidden;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -166,45 +174,44 @@ header {
 }
 
 #iluminacionA{
-    background-image: url("/assets/IMAGES/iluminacion.jpg");
+    background-image: url("/assets/IMAGES/iluminacion2.jpg");
 }
 
 #iluminacionB{
-    background-image: url("/assets/IMAGES/iluminacion.jpg");
+    background-image: url("/assets/IMAGES/iluminacion1.jpg");
 }
 
 #iluminacionC{
-    background-image: url("/assets/IMAGES/iluminacion.jpg");
+    background-image: url("/assets/IMAGES/iluminacion2.jpg");
 }
 
 #cortina1{
-    background-image: url("/assets/IMAGES/cortina.jpg");
+    background-image: url("/assets/IMAGES/cortina1.jpg");
 }
 
 #cortina2{
-    background-image: url("/assets/IMAGES/cortina.jpg");
+    background-image: url("/assets/IMAGES/cortina2.jpg");
 }
 
 #cortina3{
-    background-image: url("/assets/IMAGES/cortina.jpg");
+    background-image: url("/assets/IMAGES/cortina1.jpg");
 }
 
 #iluminacion1{
-    background-image: url("/assets/IMAGES/iluminacion.jpg");
+    background-image: url("/assets/IMAGES/iluminacion1.jpg");
 }
 
 #iluminacion2{
-    background-image: url("/assets/IMAGES/iluminacion.jpg");
+    background-image: url("/assets/IMAGES/iluminacion2.jpg");
 }
 
 #iluminacion3{
-    background-image: url("/assets/IMAGES/iluminacion.jpg");
+    background-image: url("/assets/IMAGES/iluminacion1.jpg");
 }
 
 .descripcion{
     line-height: 1.7;
     padding: 0 8px;
-    width: auto;
 }
 
 .descuento{

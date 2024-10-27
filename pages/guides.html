@@ -40,10 +40,15 @@
             <span class="flechaDesplegable"> &#9658 </span> Productos
           </button>
           <ul class="items-list">
-            <li class="producto-item" data-producto="cortinas"><button onclick="mostrarSeccion()">Cortinas</button></li>
-            <li class="producto-item" data-producto="interruptores"><button> Interruptores </button></li>
-            <li class="producto-item" data-producto="camaras"><button> Camaras </button></li>
-            <li class="producto-item" data-producto="luces"><button onclick="mostrarSeccion()"> Luces </button> </li>
+            <li class="producto-item" data-producto="inicio"><button><a href="guides.html">Más vendidos</a></button>
+            </li>
+            <li class="producto-item" data-producto="cortinas"><button
+                onclick="mostrarSeccion('seccionCortinas')">Cortinas</button></li>
+            <li class="producto-item" data-producto="interruptores"><button
+                onclick="mostrarSeccion('seccionInterruptores')"> Interruptores </button></li>
+            <li class="producto-item" data-producto="camaras"><button onclick="mostrarSeccion('seccionCamaras')"> Camaras </button></li>
+            <li class="producto-item" data-producto="luces"><button onclick="mostrarSeccion('seccionLuces')"> Luces
+              </button> </li>
           </ul>
         </li>
         <li>
@@ -58,9 +63,9 @@
       </ul>
     </nav>
 
-    <section id="contPrincipal">
+    <section id="contPrincipal" class="secciones">
       <h1 class="tituloP">Productos más vendidos</h1>
-      <main class="secciones principal">
+      <main>
         <div class="productos">
           <h1 class="titulos"> Cortinas Inteligentes</h1>
           <article class="articulos">
@@ -89,21 +94,24 @@
           <h1 class="titulos">Iluminación Inteligente</h1>
           <article class="articulos">
             <div id="iluminacionA" class="imgZoom"></div>
-            <p class="descripcion">Bombilla ZigBee 3.0 tipo E27 - RGBW + Multiblanco ajustable - 2200K a 6500K INNR<br><br>
+            <p class="descripcion">Bombilla ZigBee 3.0 tipo E27 - RGBW + Multiblanco ajustable - 2200K a 6500K
+              INNR<br><br>
               <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
               <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
           </article>
           <article class="articulos">
             <div id="iluminacionB" class="imgZoom"></div>
-            <p class="descripcion">Bombilla ZigBee 3.0 tipo E27 - RGBW + Multiblanco ajustable - 2200K a 6500K INNR<br><br>
+            <p class="descripcion">Bombilla ZigBee 3.0 tipo E27 - RGBW + Multiblanco ajustable - 2200K a 6500K
+              INNR<br><br>
               <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
               <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
           </article>
           <article class="articulos">
             <div id="iluminacionC" class="imgZoom"></div>
-            <p class="descripcion">Bombilla ZigBee 3.0 tipo E27 - RGBW + Multiblanco ajustable - 2200K a 6500K INNR<br><br>
+            <p class="descripcion">Bombilla ZigBee 3.0 tipo E27 - RGBW + Multiblanco ajustable - 2200K a 6500K
+              INNR<br><br>
               <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
               <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
@@ -112,8 +120,8 @@
       </main>
     </section>
 
-    <section id="seccionCortinas">
-      <main class="secciones">
+    <section id="seccionCortinas" class="secciones">
+      <main>
         <div class="productos">
           <h1 class="titulos">Cortinas Inteligentes</h1>
           <article class="articulos">
@@ -140,27 +148,89 @@
         </div>
       </main>
     </section>
-    <section id="seccionLuces">
-      <main class="secciones">
+
+    <section id="seccionInterruptores" class="secciones">
+      <main>
+        <div class="productos">
+          <h1 class="titulos">Interruptores</h1>
+          <article class="articulos">
+            <div id="interruptores1" class="imgZoom"></div>
+            <p class="descripcion">Motor para cortina inteligente con control YH002<br><br>
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </p>
+          </article>
+          <article class="articulos">
+            <div id="interruptores2" class="imgZoom"></div>
+            <p class="descripcion">Motor para cortina inteligente con control YH002<br><br>
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </p>
+          </article>
+          <article class="articulos">
+            <div id="interruptores3" class="imgZoom"></div>
+            <p class="descripcion">Motor para cortina inteligente con control YH002<br><br>
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </p>
+          </article>
+        </div>
+      </main>
+    </section>
+    
+    <section id="seccionCamaras" class="secciones">
+      <main>
+        <div class="productos">
+          <h1 class="titulos">Cámaras</h1>
+          <article class="articulos">
+            <div id="camaras1" class="imgZoom"></div>
+            <p class="descripcion">Motor para cortina inteligente con control YH002<br><br>
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </p>
+          </article>
+          <article class="articulos">
+            <div id="camaras2" class="imgZoom"></div>
+            <p class="descripcion">Motor para cortina inteligente con control YH002<br><br>
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </p>
+          </article>
+          <article class="articulos">
+            <div id="camaras3" class="imgZoom"></div>
+            <p class="descripcion">Motor para cortina inteligente con control YH002<br><br>
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </p>
+          </article>
+        </div>
+      </main>
+    </section>
+
+    <section id="seccionLuces" class="secciones">
+      <main>
         <div class="productos">
           <h1 class="titulos">Iluminación Inteligente</h1>
           <article class="articulos">
             <div id="iluminacion1" class="imgZoom"></div>
-            <p class="descripcion">Bombilla ZigBee 3.0 tipo E27 - RGBW + Multiblanco ajustable - 2200K a 6500K INNR<br><br>
+            <p class="descripcion">Bombilla ZigBee 3.0 tipo E27 - RGBW + Multiblanco ajustable - 2200K a 6500K
+              INNR<br><br>
               <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
               <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
           </article>
           <article class="articulos">
             <div id="iluminacion2" class="imgZoom"></div>
-            <p class="descripcion">Bombilla ZigBee 3.0 tipo E27 - RGBW + Multiblanco ajustable - 2200K a 6500K INNR<br><br>
+            <p class="descripcion">Bombilla ZigBee 3.0 tipo E27 - RGBW + Multiblanco ajustable - 2200K a 6500K
+              INNR<br><br>
               <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
               <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
           </article>
           <article class="articulos">
             <div id="iluminacion3" class="imgZoom"></div>
-            <p class="descripcion">Bombilla ZigBee 3.0 tipo E27 - RGBW + Multiblanco ajustable - 2200K a 6500K INNR<br><br>
+            <p class="descripcion">Bombilla ZigBee 3.0 tipo E27 - RGBW + Multiblanco ajustable - 2200K a 6500K
+              INNR<br><br>
               <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
               <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
