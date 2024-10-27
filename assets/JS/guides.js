@@ -76,7 +76,7 @@ function mostrarProducto(producto, index) {
 
 // Añadir el evento de clic a cada categoría de producto
 document.querySelectorAll('.producto-item').forEach(item => {
-    item.addEventListener('click', function() {
+    item.addEventListener('click', function () {
         const productoCategoria = this.getAttribute('data-producto'); // Obtener la categoría del producto
         const subproductos = productosInfo[productoCategoria]; // Obtener subproductos de la categoría seleccionada
 
@@ -99,7 +99,7 @@ document.querySelectorAll('.producto-item').forEach(item => {
 const categoriaBtns = document.querySelectorAll('.categoria-btn');
 
 categoriaBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
+    btn.addEventListener('click', function () {
         const itemsList = this.nextElementSibling;
         const arrow = this.querySelector('.flechaDesplegable');
 
@@ -128,3 +128,24 @@ function mostrarSeccion() {
         contenidoCortinas.style.display = "block";
     }
 }
+
+//zoom en imagen
+
+const contenedores = document.querySelectorAll(".imgZoom");
+
+contenedores.forEach(imgZoom => {
+    imgZoom.addEventListener("mousemove", function (movimiento) {
+        const rect = imgZoom.getBoundingClientRect();
+        const x = movimiento.clientX - rect.left;
+        const y = movimiento.clientY - rect.top;
+
+        imgZoom.style.backgroundSize = "200%"; 
+        imgZoom.style.backgroundPosition = `${(x / rect.width) * 100}% ${(y / rect.height) * 100}%`; 
+    });
+
+    imgZoom.addEventListener("mouseleave", function () {
+        imgZoom.style.backgroundSize = "100%";
+        imgZoom.style.backgroundPosition = "center";
+    });
+});
+
