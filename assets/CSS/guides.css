@@ -64,7 +64,7 @@ header {
 
 /*Comercio*/
 
-#comercio{
+#comercio {
     padding: 0 12%;
 }
 
@@ -76,12 +76,12 @@ header {
     top: 10%;
 }
 
-#categorias-list{
+#categorias-list {
     list-style: none;
     padding: 0;
 }
 
-.categoria-btn{
+.categoria-btn {
     background-color: transparent;
     border-radius: 0 10px 10px 0;
     border: 0;
@@ -89,7 +89,7 @@ header {
     cursor: pointer;
 }
 
-.producto-item button{
+.producto-item button {
     background-color: transparent;
     border: 0;
     border-bottom: solid #04a6f7 1px;
@@ -97,7 +97,7 @@ header {
     cursor: pointer;
 }
 
-.items-list{
+.items-list {
     display: none;
 }
 
@@ -107,45 +107,37 @@ header {
     list-style: none;
 }
 
-#seccionCortinas{
+#seccionCortinas {
     display: none;
 }
 
-#seccionInterruptores{
+#seccionInterruptores {
     display: none;
 }
 
-#seccionCamaras{
+#seccionCamaras {
     display: none;
 }
 
-#seccionLuces{
+#seccionLuces {
     display: none;
 }
 
-.secciones{
+.secciones {
     margin: 0 0 0 20%;
 }
 
-.principal{
-    /*border: solid blue 1px;*/
-    width: 80%;
-    height: auto;
-    margin: 0 0 0 20%;
-}
-
-.productos{
+.productos {
     display: grid;
-    grid-template-columns: repeat(3, 32%);
-    grid-template-rows: repeat(2, 50px 85%);
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-template-rows: repeat(2, 50px auto);
     column-gap: 14px;
     width: 99%;
-    height: 35em;
     /*border: solid red 1px;*/
 }
 
 
-.tituloP{
+.tituloP {
     /*border: solid black 1px;*/
     grid-column: 1/4;
     width: 100%;
@@ -154,7 +146,7 @@ header {
     text-align: center;
 }
 
-.titulos{
+.titulos {
     /*border: solid black 1px;*/
     grid-column: 1/5;
     width: 100%;
@@ -162,14 +154,15 @@ header {
     margin: 2px 0;
 }
 
-.articulos{
+.articulos {
     display: grid;
     border: solid gray 1px;
     border-radius: 10px;
-    grid-template-rows: repeat(2, 58% 42%);
+    grid-template-rows: repeat(2, minmax(50%, 1fr));
+    overflow: hidden;
 }
 
-.imgZoom{
+.imgZoom {
     overflow: hidden;
     background-size: contain;
     background-repeat: no-repeat;
@@ -180,74 +173,74 @@ header {
     display: inline-block;
 }
 
-#cortinaA{
+#cortinaA {
     background-image: url("/assets/IMAGES/motorCortina.jpg");
 }
 
-#cortinaB{
+#cortinaB {
     background-image: url("/assets/IMAGES/motorCortina.jpg");
 }
 
-#cortinaC{
+#cortinaC {
     background-image: url("/assets/IMAGES/motorCortina.jpg");
 }
 
-#iluminacionA{
+#iluminacionA {
     background-image: url("/assets/IMAGES/iluminacion2.jpg");
 }
 
-#iluminacionB{
+#iluminacionB {
     background-image: url("/assets/IMAGES/iluminacion1.jpg");
 }
 
-#iluminacionC{
+#iluminacionC {
     background-image: url("/assets/IMAGES/iluminacion2.jpg");
 }
 
-#cortina1{
+#cortina1 {
     background-image: url("/assets/IMAGES/cortina1.jpg");
 }
 
-#cortina2{
+#cortina2 {
     background-image: url("/assets/IMAGES/cortina2.jpg");
 }
 
-#cortina3{
+#cortina3 {
     background-image: url("/assets/IMAGES/cortina1.jpg");
 }
 
-#iluminacion1{
+#iluminacion1 {
     background-image: url("/assets/IMAGES/iluminacion1.jpg");
 }
 
-#iluminacion2{
+#iluminacion2 {
     background-image: url("/assets/IMAGES/iluminacion2.jpg");
 }
 
-#iluminacion3{
+#iluminacion3 {
     background-image: url("/assets/IMAGES/iluminacion1.jpg");
 }
 
-.descripcion{
+.descripcion {
     line-height: 1.7;
     padding: 0 8px;
 }
 
-.descuento{
+.descuento {
     border-radius: 8px;
     background-color: black;
     width: 45px;
     padding: 5px;
-    color: white; 
+    color: white;
 }
 
-.precio{
+.precio {
     color: gray;
     text-decoration: line-through;
     float: right;
 }
 
-.agregar{
+.agregar {
     width: 100%;
     background-color: #04a6f7;
     color: white;
@@ -259,7 +252,7 @@ header {
     border: 0;
 }
 
-.agregar:hover{
+.agregar:hover {
     background-color: #444242;
 }
 
@@ -268,24 +261,48 @@ header {
         display: flex;
         flex-wrap: wrap;
     }
-    
-#comercio{
+
+    #comercio {
         padding: 0;
     }
-    
-    .productos{
-        display: flex;
-        flex-wrap: wrap;
-        height: auto;
-    }
 
-    .titulos{
+    .tituloP {
         font-size: 20px;
     }
 
+    .titulos {
+        font-size: 20px;
+    }
+
+    #menu {
+        width: 15%;
+    }
+
+    .categoria-btn {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .productos {
+        grid-template-columns: repeat(2, 40%);
+        grid-template-rows: repeat(1, 50px 80%);
+        height: auto;
+        gap: 5px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .articulos{
-        height: 18 0px;
+        grid-template-rows: repeat(2, 40% 60%);
+        height: 18em;
+        width: 48%;
+    }
+
+    .imgZoom{
+        background-size: contain;
+    }
+
+    .descripcion{
+        font-size: 12px;
     }
 }
-
-
