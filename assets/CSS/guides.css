@@ -81,10 +81,29 @@ header {
     padding: 0;
 }
 
+.categoria-btn{
+    background-color: transparent;
+    border-radius: 0 10px 10px 0;
+    border: 0;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.producto-item button{
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid #04a6f7 1px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.items-list{
+    display: none;
+}
+
 .items-list li {
     margin: 5px 0;
     font-size: 14px;
-    cursor: pointer;
     list-style: none;
 }
 
@@ -238,6 +257,10 @@ header {
     padding: 5px;
     border-radius: 5px;
     border: 0;
+}
+
+.agregar:hover{
+    background-color: #444242;
 }
 
 @media (max-width: 768px) {
