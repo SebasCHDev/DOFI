@@ -149,7 +149,7 @@ contenedores.forEach(imgZoom => {
     });
 
     imgZoom.addEventListener("mouseleave", function () {
-        imgZoom.style.backgroundSize = "100%";
+        imgZoom.style.backgroundSize = "contain";
         imgZoom.style.backgroundPosition = "center";
     });
 });
