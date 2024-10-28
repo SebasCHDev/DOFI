@@ -12,21 +12,38 @@ nextDom.onclick = function(){
 prevDom.onclick = function(){
     showSlider('prev');
 }
+
+let timeRunning = 500;
+let timeAutoNext = 10000;
+let runTimeOut;
+let runAutoRun = setTimeout(()=>{
+    nextDom.click();
+}, timeAutoNext);
+
 /* el item activo por default sera el 1, al presionar next el primer item ira a la posicion final y seguira el siguiente elemento. */
 function showSlider(type){
     let itemSlider = document.querySelectorAll('.carousel .list .item');
     let itemThumbnail = document.querySelectorAll('.carousel .thumbnail .item');
     
     if(type === 'next'){
-        carouselDom.classList.remove('prev');
         listItemDom.appendChild(itemSlider[0]);
         thumbnailDom.appendChild(itemThumbnail[0]);
         carouselDom.classList.add('next');
     }else{
-        carouselDom.classList.remove('next');
         let positionLastItem = itemSlider.length - 1;
         listItemDom.prepend(itemSlider[positionLastItem]);
         thumbnailDom.prepend(itemThumbnail[positionLastItem]);
         carouselDom.classList.add('prev');
-    }
+    } 
+
+    clearTimeout(runTimeOut);
+    runTimeOut = setTimeout(() =>{
+        carouselDom.classList.remove('next');
+        carouselDom.classList.remove('prev');
+    }, timeRunning);
+
+    clearTimeout(runAutoRun);
+    runAutoRun = setTimeout(()=>{
+        nextDom.click();
+    }, timeAutoNext);
 }
