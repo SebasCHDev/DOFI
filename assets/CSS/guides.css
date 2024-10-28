@@ -170,55 +170,6 @@ header {
     cursor: zoom-in;
     position: relative;
     transition: 0.3s ease;
-    display: inline-block;
-}
-
-#cortinaA {
-    background-image: url("/assets/IMAGES/motorCortina.jpg");
-}
-
-#cortinaB {
-    background-image: url("/assets/IMAGES/motorCortina.jpg");
-}
-
-#cortinaC {
-    background-image: url("/assets/IMAGES/motorCortina.jpg");
-}
-
-#iluminacionA {
-    background-image: url("/assets/IMAGES/iluminacion2.jpg");
-}
-
-#iluminacionB {
-    background-image: url("/assets/IMAGES/iluminacion1.jpg");
-}
-
-#iluminacionC {
-    background-image: url("/assets/IMAGES/iluminacion2.jpg");
-}
-
-#cortina1 {
-    background-image: url("/assets/IMAGES/cortina1.jpg");
-}
-
-#cortina2 {
-    background-image: url("/assets/IMAGES/cortina2.jpg");
-}
-
-#cortina3 {
-    background-image: url("/assets/IMAGES/cortina1.jpg");
-}
-
-#iluminacion1 {
-    background-image: url("/assets/IMAGES/iluminacion1.jpg");
-}
-
-#iluminacion2 {
-    background-image: url("/assets/IMAGES/iluminacion2.jpg");
-}
-
-#iluminacion3 {
-    background-image: url("/assets/IMAGES/iluminacion1.jpg");
 }
 
 .descripcion {
@@ -226,7 +177,7 @@ header {
     padding: 0 8px;
 }
 
-.descuento {
+.precio {
     border-radius: 8px;
     background-color: black;
     width: 45px;
@@ -234,7 +185,7 @@ header {
     color: white;
 }
 
-.precio {
+.descuento {
     color: gray;
     text-decoration: line-through;
     float: right;
@@ -305,4 +256,77 @@ header {
     .descripcion{
         font-size: 12px;
     }
+}
+
+
+#cortinaA {
+    background-image: url("/assets/IMAGES/motorCortina.jpg");
+}
+
+#cortinaB {
+    background-image: url("/assets/IMAGES/cortina2.jpg");
+}
+
+#cortinaC {
+    background-image: url("/assets/IMAGES/cortina1.jpg");
+}
+
+#iluminacionA {
+    background-image: url("/assets/IMAGES/iluminacion2.jpg");
+}
+
+#iluminacionB {
+    background-image: url("/assets/IMAGES/iluminacion1.jpg");
+}
+
+#iluminacionC {
+    background-image: url("/assets/IMAGES/iluminacion2.jpg");
+}
+
+#cortina1 {
+    background-image: url("/assets/IMAGES/motorCortina.jpg");
+}
+
+#cortina2 {
+    background-image: url("/assets/IMAGES/cortina2.jpg");
+}
+
+#cortina3 {
+    background-image: url("/assets/IMAGES/cortina1.jpg");
+}
+
+#camaras1 {
+    background-image: url("/assets/IMAGES/camara1.jpg");
+}
+
+#camaras2 {
+    background-image: url("/assets/IMAGES/camara2.jpg");
+}
+
+#camaras3 {
+    background-image: url("/assets/IMAGES/camara1.jpg");
+}
+
+#interruptores1 {
+    background-image: url("/assets/IMAGES/interruptor1.jpg");
+}
+
+#interruptores2 {
+    background-image: url("/assets/IMAGES/interruptor2.jpg");
+}
+
+#interruptores3 {
+    background-image: url("/assets/IMAGES/interruptor1.jpg");
+}
+
+#iluminacion1 {
+    background-image: url("/assets/IMAGES/iluminacion1.jpg");
+}
+
+#iluminacion2 {
+    background-image: url("/assets/IMAGES/iluminacion2.jpg");
+}
+
+#iluminacion3 {
+    background-image: url("/assets/IMAGES/iluminacion1.jpg");
 }
