@@ -10,7 +10,7 @@ nextDom.onclick = function(){
 }
 
 prevDom.onclick = function(){
-    showSlider('next');
+    showSlider('prev');
 }
 /* el item activo por default sera el 1, al presionar next el primer item ira a la posicion final y seguira el siguiente elemento. */
 function showSlider(type){
@@ -18,11 +18,15 @@ function showSlider(type){
     let itemThumbnail = document.querySelectorAll('.carousel .thumbnail .item');
     
     if(type === 'next'){
+        carouselDom.classList.remove('prev');
         listItemDom.appendChild(itemSlider[0]);
         thumbnailDom.appendChild(itemThumbnail[0]);
-        carouselDom.classlist.add('next');
+        carouselDom.classList.add('next');
     }else{
+        carouselDom.classList.remove('next');
         let positionLastItem = itemSlider.length - 1;
         listItemDom.prepend(itemSlider[positionLastItem]);
+        thumbnailDom.prepend(itemThumbnail[positionLastItem]);
+        carouselDom.classList.add('prev');
     }
 }
