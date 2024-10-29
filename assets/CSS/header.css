@@ -10,16 +10,21 @@ header {
 }
 
 .titleContainer {
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin: 5px;
-    background: transparent; /* modificar color a gusto */
+    background: white; /* modificar color a gusto */
     position: relative;
     text-align: center;
     cursor: pointer;
 }
 
+.submenu{
+    height: 20px;
+    font-size: 1.3em;
+}
+
 .originalTitle{
-    color: white;
+    color: black;
 }
 .changeTitle {
     position: absolute;
@@ -27,7 +32,7 @@ header {
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.5s ease;
-    color: white;
+    color: black;
 }
 
 .titleContainer:hover .originalTitle {

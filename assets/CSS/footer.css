@@ -2,7 +2,7 @@
 
 .footer {
     padding: 50px 10% 50px 10%;
-    background-color: #8ca0e2;
+    background-color: rgba(1, 76, 67, 0.986);
 }
 
 /* Primera fila: logo y texto */
@@ -61,10 +61,10 @@
     display: inline-block;
     width: 150px;
     padding: 12px;
-    background-color: #611d99;
-    box-shadow: 2px 2px 3px 0px rgba(216, 75, 252, 0.712);
+    background-color: #ffffff;
+    box-shadow: 2px 2px 3px 0px rgba(75, 202, 252, 0.712);
     text-decoration: none;
-    color: rgb(211, 235, 235);
+    color: black;
     border-radius: 100px;
     text-align: center;
     font-size: 19px;
@@ -73,8 +73,8 @@
 }
 
 .buttonInformation2:hover {
-    background-color: #611d99;
-    box-shadow: 3px 3px 5px 0px #7b7a7c;
+    background-color: #b7d3e5;
+    box-shadow: 3px 3px 5px 0px #256dba;
     color: rgb(0, 0, 0);
     transition: 0.7s;
     /* transform: scale(1.1, 1.1); */
@@ -86,19 +86,19 @@
     display: inline-block;
     width: 150px;
     padding: 12px;
-    background-color: #611d99;
-    box-shadow: 2px 2px 3px 0px rgba(216, 75, 252, 0.712);
+    background-color: #ffffff;
+    box-shadow: 2px 2px 3px 0px rgba(75, 202, 252, 0.712);
     text-decoration: none;
-    color: rgb(211, 235, 235);
+    color: black;
     border-radius: 100px;
     text-align: center;
     font-size: 19px;
     font-weight: bold;
-    margin: auto;
+    margin: 5px 0 0;
 }
 
 .buttonInformation3:hover {
-    background-color: rgba(128, 90, 189, 0.986);
+    background-color: #b7d3e5;
     box-shadow: 3px 3px 5px 0px #7b7a7c;
     color: rgb(0, 0, 0);
     transition: 0.7s;
@@ -120,7 +120,7 @@
 .fila3 p {
     text-align: center;
     font-size: 14px;
-    color: #555;
+    color: #ffffff;
 }
 
 /* FIN FOOTER*/

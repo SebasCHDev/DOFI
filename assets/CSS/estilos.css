@@ -15,7 +15,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
-  background-color: #cdd1d4;
+  background-color: rgba(5, 196, 174, 0.986);
   margin: 5px;
 }
 
