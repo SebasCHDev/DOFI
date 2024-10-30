@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/assets/CSS/gallery.css">
     <link rel="stylesheet" href="/assets/CSS/footer.css">
     <script src="https://kit.fontawesome.com/516d057011.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Galería</title>
 </head>
 
 <body>
@@ -41,8 +41,31 @@
 
     <h1>Galería de Productos</h1>
 
+    <nav class="navbar">
+        <a href="#" onclick="showSection('cortinas')">Cortinas</a>
+        <a href="#" onclick="showSection('interruptores')">Interruptores</a>
+        <a href="#" onclick="showSection('camaras')">Cámaras</a>
+        <a href="#" onclick="showSection('luces')">Luces</a>
+    </nav>
+
     <!-- Sección Cortinas -->
-    <section class="gallery-section">
+    <section id="general" class="gallery-section">
+        <h2>Fotos</h2>
+        <div class="gallery">
+            <img src="/assets/IMAGES/Cortinas/cortina1.png" alt="Cortina 1" class="gallery-image">
+            <img src="/assets/IMAGES/Cortinas/cortina2.png" alt="Cortina 2" class="gallery-image">
+            <img src="/assets/IMAGES/Interruptores/Interruptor5.webp" alt="Interruptor 5" class="gallery-image">
+            <img src="/assets/IMAGES/Interruptores/Interruptor6.webp" alt="Interruptor 6" class="gallery-image">
+            <img src="/assets/IMAGES/Camaras/camara3.webp" alt="Cámara 3" class="gallery-image">
+            <img src="/assets/IMAGES/Camaras/camara4.webp" alt="Cámara 4" class="gallery-image">
+            <img src="/assets/IMAGES/Luces/Luces3.webp" alt="Luz 3" class="gallery-image">
+            <img src="/assets/IMAGES/Luces/Luces4.webp" alt="Luz 4" class="gallery-image">
+            <img src="/assets/IMAGES/Luces/Luces5.webp" alt="Luz 5" class="gallery-image">
+            <!-- Agrega hasta 9 imágenes -->
+        </div>
+    </section>
+
+    <section id="cortinas" class="gallery-section">
         <h2>Cortinas</h2>
         <div class="gallery">
             <img src="/assets/IMAGES/Cortinas/cortina1.png" alt="Cortina 1" class="gallery-image">
@@ -59,7 +82,7 @@
     </section>
 
     <!-- Sección Interruptores -->
-    <section class="gallery-section">
+    <section id="interruptores" class="gallery-section">
         <h2>Interruptores</h2>
         <div class="gallery">
             <img src="/assets/IMAGES/Interruptores/Interruptor1.webp" alt="Interruptor 1" class="gallery-image">
@@ -76,24 +99,24 @@
     </section>
 
     <!-- Sección Cámaras -->
-    <section class="gallery-section">
+    <section id="camaras" class="gallery-section">
         <h2>Cámaras</h2>
         <div class="gallery">
-            <img src="/assets/IMAGES/Camaras/camara1.png" alt="Cámara 1" class="gallery-image">
-            <img src="/assets/IMAGES/Camaras/camara.png" alt="Cámara 2" class="gallery-image">
-            <img src="/assets/IMAGES/Camaras/camara.png" alt="Cámara 3" class="gallery-image">
-            <img src="/assets/IMAGES/Camaras/camara.png" alt="Cámara 4" class="gallery-image">
-            <img src="/assets/IMAGES/Camaras/camara.png" alt="Cámara 5" class="gallery-image">
-            <img src="/assets/IMAGES/Camaras/camara.png" alt="Cámara 6" class="gallery-image">
-            <img src="/assets/IMAGES/Camaras/camara.png" alt="Cámara 7" class="gallery-image">
-            <img src="/assets/IMAGES/Camaras/camara.png" alt="Cámara 8" class="gallery-image">
-            <img src="/assets/IMAGES/Camaras/camara.png" alt="Cámara 9" class="gallery-image">
+            <img src="/assets/IMAGES/Camaras/camara1.webp" alt="Cámara 1" class="gallery-image">
+            <img src="/assets/IMAGES/Camaras/camara2.webp" alt="Cámara 2" class="gallery-image">
+            <img src="/assets/IMAGES/Camaras/camara3.webp" alt="Cámara 3" class="gallery-image">
+            <img src="/assets/IMAGES/Camaras/camara4.webp" alt="Cámara 4" class="gallery-image">
+            <img src="/assets/IMAGES/Camaras/camara5.png" alt="Cámara 5" class="gallery-image">
+            <img src="/assets/IMAGES/Camaras/camara6.webp" alt="Cámara 6" class="gallery-image">
+            <img src="/assets/IMAGES/Camaras/camara7.webp" alt="Cámara 7" class="gallery-image">
+            <img src="/assets/IMAGES/Camaras/camara8.webp" alt="Cámara 8" class="gallery-image">
+            <img src="/assets/IMAGES/Camaras/camara9.webp" alt="Cámara 9" class="gallery-image">
             <!-- Agrega hasta 9 imágenes -->
         </div>
     </section>
 
     <!-- Sección Luces -->
-    <section class="gallery-section">
+    <section id="luces" class="gallery-section">
         <h2>Luces</h2>
         <div class="gallery">
             <img src="/assets/IMAGES/Luces/Luces1.webp" alt="Luz 1" class="gallery-image">
