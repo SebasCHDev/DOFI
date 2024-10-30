@@ -114,25 +114,47 @@ categoriaBtns.forEach(btn => {
 });
 
 //Cambio de secciones
+/* 
+function mostrarSeccion(seccion) {
+   const secciones = document.querySelectorAll('.secciones');
 
-function mostrarSeccion(seccionId){
-    const contenidoPrincipal = document.getElementById("contPrincipal");
-    const secciones = ['seccionCortinas', 'seccionInterruptores', 'seccionCamaras', 'seccionLuces'];
+   secciones.forEach((sec) => {
+       if (seccion === 'all' || sec.classList.contains(seccion)) {
+           sec.style.display = 'block';
+       } else {
+           sec.style.display = 'none';
+       }
+   });
+} */
 
-    secciones.forEach(id => {
-        const contenidoSecundario = document.getElementById(id);
-        contenidoSecundario.style.display = 'none';
+function mostrarSeccion(seccion) {
+    const secciones = document.querySelectorAll('.secciones');
+    const noVendido = document.querySelectorAll('.noVendido');
+
+    secciones.forEach(sec => {
+        sec.style.display = 'none';
     });
-    
-    if (seccionId === 'contPrincipal') {
-        contenidoPrincipal.style.display = 'block';
-    } else {
-        contenidoPrincipal.style.display = 'none';
-        const contenidoSecundarioSeleccionado = document.getElementById(seccionId);
-        contenidoSecundarioSeleccionado.style.display = 'block';
-    }
 
+    if (seccion === 'all') {
+        secciones.forEach(sec => {
+            sec.style.display = 'block';
+        });
+        noVendido.forEach(article => {
+            article.style.display = 'none';
+        });
+    } else {
+        const seccionSeleccionada = document.querySelector(`.${seccion}`);
+        seccionSeleccionada.style.display = 'block';
+
+        const articulosNoVendidos = seccionSeleccionada.querySelectorAll('.noVendido');
+        articulosNoVendidos.forEach(article => {
+            article.style.display = 'block';
+            article.style.backgroundImage = 'block'; 
+        });
+    }
 }
+mostrarSeccion('all');
+
 
 //zoom en imagen
 
@@ -144,8 +166,8 @@ contenedores.forEach(imgZoom => {
         const x = movimiento.clientX - rect.left;
         const y = movimiento.clientY - rect.top;
 
-        imgZoom.style.backgroundSize = "120%"; 
-        imgZoom.style.backgroundPosition = `${(x / rect.width) * 100}% ${(y / rect.height) * 100}%`; 
+        imgZoom.style.backgroundSize = "120%";
+        imgZoom.style.backgroundPosition = `${(x / rect.width) * 100}% ${(y / rect.height) * 100}%`;
     });
 
     imgZoom.addEventListener("mouseleave", function () {

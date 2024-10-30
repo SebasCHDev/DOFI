@@ -116,24 +116,9 @@ header {
     list-style: none;
 }
 
-#seccionCortinas {
-    display: none;
-}
-
-#seccionInterruptores {
-    display: none;
-}
-
-#seccionCamaras {
-    display: none;
-}
-
-#seccionLuces {
-    display: none;
-}
-
 .secciones {
     margin: 0 0 0 20%;
+    display: none;
 }
 
 .productos {
@@ -145,6 +130,16 @@ header {
     /*border: solid red 1px;*/
 }
 
+.segundaFila{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    column-gap: 14px;
+    margin-bottom: 3%;
+}
+
+.noVendidos{
+    display: none;
+}
 
 .tituloP {
     /*border: solid black 1px;*/
@@ -200,6 +195,10 @@ header {
     color: gray;
     text-decoration: line-through;
     float: right;
+}
+
+.carrito{
+    padding: 10px;
 }
 
 .agregar {
@@ -269,41 +268,32 @@ header {
     }
 }
 
-
-#cortinaA {
-    background-image: url("/assets/IMAGES/motorCortina.jpg");
-}
-
-#cortinaB {
-    background-image: url("/assets/IMAGES/cortina2.jpg");
-}
-
-#cortinaC {
-    background-image: url("/assets/IMAGES/cortina1.jpg");
-}
-
-#iluminacionA {
-    background-image: url("/assets/IMAGES/iluminacion2.jpg");
-}
-
-#iluminacionB {
-    background-image: url("/assets/IMAGES/iluminacion1.jpg");
-}
-
-#iluminacionC {
-    background-image: url("/assets/IMAGES/iluminacion2.jpg");
-}
-
 #cortina1 {
-    background-image: url("/assets/IMAGES/motorCortina.jpg");
+    background-image: url("/assets/IMAGES/Productos/Cortinas/cortina1.jpg");
 }
 
 #cortina2 {
-    background-image: url("/assets/IMAGES/cortina2.jpg");
+    background-image: url("/assets/IMAGES/Productos/Cortinas/cortina2.jpg");
 }
 
 #cortina3 {
-    background-image: url("/assets/IMAGES/cortina1.jpg");
+    background-image: url("/assets/IMAGES/Productos/Cortinas/cortina3.jpg");
+}
+
+#cortina4 {
+    background-image: url("/assets/IMAGES/Productos/Cortinas/cortina4.jpg");
+}
+
+#interruptores1 {
+    background-image: url("/assets/IMAGES/Productos/Interruptores/interruptor1.jpg");
+}
+
+#interruptores2 {
+    background-image: url("/assets/IMAGES/Productos/Interruptores/interruptor2.jpg");
+}
+
+#interruptores3 {
+    background-image: url("/assets/IMAGES/Productos/Interruptores/interruptor3.jpg");
 }
 
 #camaras1 {
@@ -316,18 +306,6 @@ header {
 
 #camaras3 {
     background-image: url("/assets/IMAGES/camara1.jpg");
-}
-
-#interruptores1 {
-    background-image: url("/assets/IMAGES/interruptor1.jpg");
-}
-
-#interruptores2 {
-    background-image: url("/assets/IMAGES/interruptor2.jpg");
-}
-
-#interruptores3 {
-    background-image: url("/assets/IMAGES/interruptor1.jpg");
 }
 
 #iluminacion1 {
