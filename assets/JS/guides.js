@@ -103,12 +103,12 @@ categoriaBtns.forEach(btn => {
         const itemsList = this.nextElementSibling;
         const arrow = this.querySelector('.flechaDesplegable');
 
-        if (itemsList.style.display === "block") {
-            itemsList.style.display = "none";
-            arrow.innerHTML = '&#9658;'; // Triángulo apuntando a la derecha
-        } else {
+        if (itemsList.style.display === "none") {
             itemsList.style.display = "block";
-            arrow.innerHTML = '&#9660;'; // Triángulo apuntando hacia abajo
+            arrow.innerHTML = '&#9660;'; // Triángulo apuntando a la derecha
+        } else {
+            itemsList.style.display = "none";
+            arrow.innerHTML = '&#9658;'; // Triángulo apuntando hacia abajo
         }
     })
 });
@@ -144,7 +144,7 @@ contenedores.forEach(imgZoom => {
         const x = movimiento.clientX - rect.left;
         const y = movimiento.clientY - rect.top;
 
-        imgZoom.style.backgroundSize = "200%"; 
+        imgZoom.style.backgroundSize = "120%"; 
         imgZoom.style.backgroundPosition = `${(x / rect.width) * 100}% ${(y / rect.height) * 100}%`; 
     });
 

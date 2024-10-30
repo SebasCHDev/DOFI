@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DOFI - Domótica Optimizada para un Futuro Inteligente</title>
-  <link rel="stylesheet" href="/assets/CSS/guides.css">
-  <link rel="stylesheet" href="/assets/CSS/normalize.css">
-  <link rel="stylesheet" href="/assets/CSS/footer.css">
+  <link rel="stylesheet" href="C:/Users/Estudiante/Desktop/DOFI/assets/CSS/guides.css">
+  <link rel="stylesheet" href="C:/Users/Estudiante/Desktop/DOFI/assets/CSS/normalize.css">
+  <link rel="stylesheet" href="C:/Users/Estudiante/Desktop/DOFI/assets/CSS/footer.css">
   <script src="https://kit.fontawesome.com/516d057011.js" crossorigin="anonymous"></script>
 
 
@@ -37,27 +37,32 @@
       <ul id="categorias-list">
         <li>
           <button class="categoria-btn">
-            <span class="flechaDesplegable"> &#9658 </span> Productos
+            <span class="flechaDesplegable"> &#9660 </span> Productos
           </button>
           <ul class="items-list">
             <li class="producto-item" data-producto="inicio"><button><a href="guides.html">Más vendidos</a></button>
             </li>
-            <li class="producto-item" data-producto="cortinas"><button
-                onclick="mostrarSeccion('seccionCortinas')"> Cortinas </button></li>
+            <li class="producto-item" data-producto="cortinas"><button onclick="mostrarSeccion('seccionCortinas')">
+                Cortinas </button></li>
             <li class="producto-item" data-producto="interruptores"><button
                 onclick="mostrarSeccion('seccionInterruptores')"> Interruptores </button></li>
-            <li class="producto-item" data-producto="camaras"><button onclick="mostrarSeccion('seccionCamaras')"> Cámaras </button></li>
+            <li class="producto-item" data-producto="camaras"><button onclick="mostrarSeccion('seccionCamaras')">
+                Cámaras </button></li>
             <li class="producto-item" data-producto="luces"><button onclick="mostrarSeccion('seccionLuces')"> Luces
               </button> </li>
           </ul>
         </li>
         <li>
           <button class="categoria-btn">
-            <span class="flechaDesplegable"> &#9658 </span> Cliente
+            <span class="flechaDesplegable"> &#9660 </span> Precios
           </button>
           <ul class="items-list">
-            <li class="producto-item"><button> Sura </button> </li>
-            <li class="producto-item"><button> Bancolombia </button> </li>
+            <li class="precio-item" data-precio="precioBajo"><button onclick="mostrarSeccion('seccionCortinas')">
+                Hasta $500.000 </button></li>
+            <li class="precio-item" data-precio="precioIntermedio"><button
+                onclick="mostrarSeccion('seccionInterruptores')"> $500.001 a $1.000.000 </button></li>
+            <li class="precio-item" data-precio="precioAlto"><button onclick="mostrarSeccion('seccionCamaras')">
+                Más de $1.000.001 </button></li>
           </ul>
         </li>
       </ul>
@@ -70,24 +75,29 @@
           <h1 class="titulos"> Cortinas Inteligentes</h1>
           <article class="articulos">
             <div id="cortinaA" class="imgZoom"></div>
-            <p class="descripcion">Motor para cortina inteligente con control YH002<br><br>
+            <p class="descripcion">Motor para cortina inteligente con control YH002<br><br></p>
+            <div class="carrito">
               <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
               <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
-            </p>
+            </div>
           </article>
           <article class="articulos">
             <div id="cortinaB" class="imgZoom"></div>
             <p class="descripcion">Cortina Enrollable Blackout Manual<br><br>
-              <span class="descuento">$156.000</span><span class="precio">$106.000</span><br>
-              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
+            <div class="carrito">
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </div>
           </article>
           <article class="articulos">
             <div id="cortinaC" class="imgZoom"></div>
             <p class="descripcion">Cortina Enrollable Blackout con Control Remoto<br><br>
-              <span class="descuento">$880.000</span><span class="precio">$800.000</span><br>
-              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
+            <div class="carrito">
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </div>
           </article>
         </div>
         <div class="productos">
@@ -95,23 +105,29 @@
           <article class="articulos">
             <div id="iluminacionA" class="imgZoom"></div>
             <p class="descripcion">Cololight PLUS HomeKit<br><br>
-              <span class="descuento">$550.000</span><span class="precio">$480.500</span><br>
-              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
+            <div class="carrito">
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </div>
           </article>
           <article class="articulos">
             <div id="iluminacionB" class="imgZoom"></div>
             <p class="descripcion">BLEND - Bombilla LED<br><br>
-              <span class="descuento">$210.000</span><span class="precio">$180.000</span><br>
-              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
+            <div class="carrito">
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </div>
           </article>
           <article class="articulos">
             <div id="iluminacionC" class="imgZoom"></div>
             <p class="descripcion">Cololight PLUS HomeKit<br><br>
-              <span class="descuento">$550.000</span><span class="precio">$480.500</span><br>
-              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
+            <div class="carrito">
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </div>
           </article>
         </div>
       </main>
@@ -124,23 +140,29 @@
           <article class="articulos">
             <div id="cortina1" class="imgZoom"></div>
             <p class="descripcion">Motor para cortina inteligente con control YH002<br><br>
+            </p>
+            <div class="carrito">
               <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
               <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
-            </p>
+            </div>
           </article>
           <article class="articulos">
             <div id="cortina2" class="imgZoom"></div>
             <p class="descripcion">Cortina Enrollable Blackout Manual<br><br>
-              <span class="descuento">$156.000</span><span class="precio">$106.000</span><br>
-              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
+            <div class="carrito">
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </div>
           </article>
           <article class="articulos">
             <div id="cortina3" class="imgZoom"></div>
             <p class="descripcion">Cortina Enrollable Blackout con Control Remoto<br><br>
-              <span class="descuento">$880.000</span><span class="precio">$800.000</span><br>
-              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
+            <div class="carrito">
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </div>
           </article>
         </div>
       </main>
@@ -153,28 +175,34 @@
           <article class="articulos">
             <div id="interruptores1" class="imgZoom"></div>
             <p class="descripcion">Interruptor Moonstone<br><br>
-              <span class="descuento">$316.000</span><span class="precio">$286.000</span><br>
-              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
+            <div class="carrito">
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </div>
           </article>
           <article class="articulos">
             <div id="interruptores2" class="imgZoom"></div>
             <p class="descripcion">Interruptor Dimmer<br><br>
-              <span class="descuento">$346.000</span><span class="precio">$306.000</span><br>
-              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
+            <div class="carrito">
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </div>
           </article>
           <article class="articulos">
             <div id="interruptores3" class="imgZoom"></div>
             <p class="descripcion">Interruptor Moonstone<br><br>
-              <span class="descuento">$316.000</span><span class="precio">$286.000</span><br>
-              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
+            <div class="carrito">
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </div>
           </article>
         </div>
       </main>
     </section>
-    
+
     <section id="seccionCamaras" class="secciones">
       <main>
         <div class="productos">
@@ -182,23 +210,29 @@
           <article class="articulos">
             <div id="camaras1" class="imgZoom"></div>
             <p class="descripcion">Cámara Wi-Fi<br><br>
-              <span class="descuento">$400.000</span><span class="precio">$370.000</span><br>
-              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
+            <div class="carrito">
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </div>
           </article>
           <article class="articulos">
             <div id="camaras2" class="imgZoom"></div>
             <p class="descripcion">REOLINK Sistema de cámara de seguridad para exteriores 4K<br><br>
-              <span class="descuento">$390.000</span><span class="precio">$360.000</span><br>
-              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
+            <div class="carrito">
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </div>
           </article>
           <article class="articulos">
             <div id="camaras3" class="imgZoom"></div>
             <p class="descripcion">Cámara Wi-Fi<br><br>
-              <span class="descuento">$400.000</span><span class="precio">$370.000</span><br>
-              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
+            <div class="carrito">
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </div>
           </article>
         </div>
       </main>
@@ -211,23 +245,29 @@
           <article class="articulos">
             <div id="iluminacion1" class="imgZoom"></div>
             <p class="descripcion">BLEND - Bombilla LED<br><br>
-              <span class="descuento">$210.000</span><span class="precio">$180.000</span><br>
-              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
+            <div class="carrito">
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </div>
           </article>
           <article class="articulos">
             <div id="iluminacion2" class="imgZoom"></div>
             <p class="descripcion">Cololight PLUS HomeKit<br><br>
-              <span class="descuento">$550.000</span><span class="precio">$480.500</span><br>
-              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
             </p>
+            <div class="carrito">
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </div>
           </article>
           <article class="articulos">
             <div id="iluminacion3" class="imgZoom"></div>
-            <p class="descripcion">BLEND - Bombilla LED<br><br> 
-              <span class="descuento">$210.000</span><span class="precio">$180.000</span><br>
-              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            <p class="descripcion">BLEND - Bombilla LED<br><br>
             </p>
+            <div class="carrito">
+              <span class="descuento">$380.000</span><span class="precio">$264.500</span><br>
+              <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </div>
           </article>
         </div>
       </main>
@@ -298,6 +338,6 @@
 
 </body>
 
-<script src="/assets/JS/guides.js"></script>
+<script src="C:/Users/Estudiante/Desktop/DOFI/assets/JS/guides.js"></script>
 
 </html>
