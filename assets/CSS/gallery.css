@@ -63,6 +63,7 @@ h1 {
   font-size: 2.5em;
   margin-bottom: 0.5em;
   color: #333;
+  text-shadow: 2px 2px 4px rgba(6, 135, 120, 0.986);
   animation: float 3s ease-in-out infinite;
 }
 
@@ -101,7 +102,6 @@ h1 {
   color: #1e90ff;
 }
 
-/* Estilo al hacer hover */
 .navbar a::after {
   content: '';
   position: absolute;
@@ -121,6 +121,7 @@ h1 {
 /* Sección galeria */
 .gallery-section {
   display: none; 
+  margin: 0 0 20px;
 }
 
 .gallery-section.active {
