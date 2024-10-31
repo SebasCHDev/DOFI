@@ -155,26 +155,6 @@ function mostrarSeccion(seccion) {
 }
 mostrarSeccion('all');
 
-function abrirModal(contenido) {
-    const modal = document.getElementById("modal");
-    const modalContent = document.getElementById("modalContent");
-
-    modalContent.innerHTML = contenido;
-    modal.style.display = "flex"; 
-}
-
-const closeModal = document.querySelector(".close");
-closeModal.addEventListener("click", () => {
-    const modal = document.getElementById("modal");
-    modal.style.display = "none";
-});
-
-window.addEventListener("click", (e) => {
-    const modal = document.getElementById("modal");
-    if (e.target === modal) {
-        modal.style.display = "none";
-    }
-});
 
 //zoom en imagen
 
@@ -196,3 +176,42 @@ contenedores.forEach(imgZoom => {
     });
 });
 
+
+//ventana Emergente
+
+function abrirModal(contenido) {
+    const modal = document.getElementById("modal");
+    const modalContent = document.querySelectorAll('.modalContent');
+
+    modalContent.innerHTML = contenido;
+    modal.style.display = "flex"; 
+}
+
+const closeModal = document.querySelector(".close");
+closeModal.addEventListener("click", () => {
+    const modal = document.getElementById("modal");
+    modal.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+    const modal = document.getElementById("modal");
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});
+
+//carrusel
+
+ const imagenGrande = document.querySelector(".imagenGrande");
+ const imagenesPequeñas = document.querySelectorAll(".imagenPequeña");
+ 
+ imagenesPequeñas.forEach((imagenPequeña) => {
+     imagenPequeña.addEventListener("click", () => {
+         
+         const nuevaImagen = imagenPequeña.getAttribute("data-imagen");
+         imagenGrande.src = nuevaImagen;
+
+         imagenesPequeñas.forEach(img => img.classList.remove("activa"));
+         imagenPequeña.classList.add("activa");
+     });
+ });
