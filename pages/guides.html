@@ -75,7 +75,9 @@
         <h1 class="titulos"> Cortinas Inteligentes</h1>
         <article class="articulos">
           <div id="cortina1" class="imgZoom"></div>
-          <p class="descripcion" onclick="abrirModal('articuloCortina1')">Cortina domótica ABALON<br><br></p>
+          <p class="descripcion" onclick="abrirModal('articuloCortina1')">Cortina domótica ABALON <br><br>
+            <span class="verMas">Ver más <i class="fa-solid fa-up-right-from-square fa-bounce"></i></span>
+          </p>
           <div class="carrito">
             <span class="descuento">$ 830.000</span><span class="precio">$ 763.600</span><br>
             <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
@@ -213,28 +215,103 @@
   <div class="modal" id="modal">
     <span class="close">&times;</span>
     <section class="ventanaEmergente modalContent" id="articuloCortina1">
-      <div class="manual">
+      <div class="info">
         <div class="columna1">
           <div class="carrusel">
             <img class="imagenGrande"
-              src="\assets\IMAGES\Productos\Cortinas\cortina1.jpg">
+              src="C:/Users/Estudiante/Desktop/DOFI\assets\IMAGES\Productos\Cortinas\cortina1.jpg">
           </div>
           <div class="imagenesPequeñas">
             <img class="imagenPequeña activa"
-              src="\assets\IMAGES\Productos\Cortinas\cortina1.jpg" alt=""
-              data-imagen="\assets\IMAGES\Productos\Cortinas\cortina1.jpg">
+              src="C:/Users/Estudiante/Desktop/DOFI\assets\IMAGES\Productos\Cortinas\cortina1.jpg" alt=""
+              data-imagen="C:/Users/Estudiante/Desktop/DOFI\assets\IMAGES\Productos\Cortinas\cortina1.jpg">
             <img class="imagenPequeña"
-              src="\assets\IMAGES\Productos\Cortinas\cortina2.jpg" alt=""
-              data-imagen="\assets\IMAGES\Productos\Cortinas\cortina2.jpg">
+              src="C:/Users/Estudiante/Desktop/DOFI\assets\IMAGES\Productos\Cortinas\cortina1-1.jpg" alt=""
+              data-imagen="C:/Users/Estudiante/Desktop/DOFI\assets\IMAGES\Productos\Cortinas\cortina1-1.jpg">
             <img class="imagenPequeña"
-              src="\assets\IMAGES\Productos\Cortinas\cortina3.jpg" alt=""
-              data-imagen="\assets\IMAGES\Productos\Cortinas\cortina3.jpg">
+              src="C:/Users/Estudiante/Desktop/DOFI\assets\IMAGES\Productos\Cortinas\cortina1-2.jpg" alt=""
+              data-imagen="C:/Users/Estudiante/Desktop/DOFI\assets\IMAGES\Productos\Cortinas\cortina1-2.jpg">
             <img class="imagenPequeña"
-              src="\assets\IMAGES\Productos\Cortinas\cortina4.jpg" alt=""
-              data-imagen="\assets\IMAGES\Productos\Cortinas\cortina4.jpg">
+              src="C:/Users/Estudiante/Desktop/DOFI\assets\IMAGES\Productos\Cortinas\cortina1-3.jpg" alt=""
+              data-imagen="C:/Users/Estudiante/Desktop/DOFI\assets\IMAGES\Productos\Cortinas\cortina1-3.jpg">
+          </div>
+          <div class="manual">
+            <a href="C:\Users\Estudiante\Desktop\DOFI\assets\IMAGES\Productos\Cortinas\Manuales\cortina1.pdf"
+              target="_blank">Manual de instalación.pdf</a>
           </div>
         </div>
-        <nav class="info"> hola
+        <nav class="columna2">
+          <div class="nombre">ABALON Riel Motorizado para Cortinas, 2 Metros, Motor WiFi Compatible con Alexa Google
+            Home y App móvil, Smart Home, con Mando, Riel Eléctrico, Cortinas Automáticas Motorizadas. (2) Gris Aluminio
+          </div>
+          <div class="precioCompleto">
+            <p>Precio producto: $ 830.000</p>
+            <p>Precio instalación: $ 100.000</p>
+            <p>Descuento: 8%</p>
+          </div>
+          <div class="envio">
+            <p class="stock">En stock</p>
+            <label for="numero"></label>
+            <select id="numero" name="numero" class="cantidad">
+              <option value="">Selecciona la cantidad</option>
+            </select>
+          </div>
+          <div class="detalles">
+            <h3>Detalles</h3>
+            <table class="tabla">
+              <tr>
+                <td class="tipos">Marca</td>
+                <td>ABALON</td>
+              </tr>
+              <tr>
+                <td class="tipos">Color</td>
+                <td>Gris Aluminio</td>
+              </tr>
+              <tr>
+                <td class="tipos">Dimensiones del producto</td>
+                <td>106l. x 23an. centímetros</td>
+              </tr>
+              <tr>
+                <td class="tipos">Material</td>
+                <td>Aluminium</td>
+              </tr>
+              <tr>
+                <td class="tipos">Tipo de montaje</td>
+                <td>Montaje en techo, Montaje en pared</td>
+              </tr>
+              <tr>
+                <td class="tipos">Peso del producto</td>
+                <td>3500 Gramos</td>
+              </tr>
+              <tr>
+                <td class="tipos">Recomendación de peso máximo</td>
+                <td>3500 Gramos</td>
+              </tr>
+              <tr>
+                <td class="tipos">Duración de la disponibilidad de piezas de recambio</td>
+                <td>en la UE 10 Años</td>
+              </tr>
+              <tr>
+                <td class="tipos">Fabricante</td>
+                <td>ABALON</td>
+              </tr>
+            </table>
+          </div>
+          <div class="acercaDe">
+            <h3>Acerca de este producto</h3>
+            <span>
+              - Este kit es de máximo 2 metros (KITs disponibles: 2,3,4,5 y 6m). El motor es Wifi y se puede controlar
+              mediante Alexa, Google Home, una App móvil (Tuya) o cualquier otro dispositivo sincronizable via Wifi.
+              También se puede controlar con un mando. Garantía de 3 años. <br>
+              - Vídeos de montaje e instalación disponibles (inglés, alemán, italiano, francés, español). <br>
+              - La cortina se puede accionar manualmente. El motor queda oculto detrás de la cortina. Dos modelos de
+              apertura: central o lateral. El riel puede ser instalado a pared o techo. <br>
+              - Los rieles son compatibles con todas las cortinas menos las cortinas ollaos. <br>
+              - ABALON Riel Motorizado para Cortinas, 2 Metros, Motor WiFi Compatible con Alexa Google Home y App móvil,
+              Smart Home, con Mando, Riel Eléctrico, Cortinas Automáticas Motorizadas. (2) <br>
+              - Visita nuestra tienda de DOFI para saber más
+            </span>
+          </div>
         </nav>
       </div>
     </section>
