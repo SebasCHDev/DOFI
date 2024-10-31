@@ -149,12 +149,32 @@ function mostrarSeccion(seccion) {
         const articulosNoVendidos = seccionSeleccionada.querySelectorAll('.noVendido');
         articulosNoVendidos.forEach(article => {
             article.style.display = 'block';
-            article.style.backgroundImage = 'block'; 
+            article.style.backgroundImage = 'block';
         });
     }
 }
 mostrarSeccion('all');
 
+function abrirModal(contenido) {
+    const modal = document.getElementById("modal");
+    const modalContent = document.getElementById("modalContent");
+
+    modalContent.innerHTML = contenido;
+    modal.style.display = "flex"; 
+}
+
+const closeModal = document.querySelector(".close");
+closeModal.addEventListener("click", () => {
+    const modal = document.getElementById("modal");
+    modal.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+    const modal = document.getElementById("modal");
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});
 
 //zoom en imagen
 
