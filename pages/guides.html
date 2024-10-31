@@ -75,7 +75,7 @@
         <h1 class="titulos"> Cortinas Inteligentes</h1>
         <article class="articulos">
           <div id="cortina1" class="imgZoom"></div>
-          <p class="descripcion">Cortina domótica ABALON<br><br></p>
+          <p class="descripcion" onclick="abrirModal('articuloCortina1')">Cortina domótica ABALON<br><br></p>
           <div class="carrito">
             <span class="descuento">$ 830.000</span><span class="precio">$ 763.600</span><br>
             <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
@@ -208,68 +208,78 @@
         </article>
       </div>
     </section>
+  </section>
 
-    <footer class="footer">
-      <div class="logoEspacio">
-        <span class="logoFooter">
-          <img src="/assets/IMAGES/LogoMonocromatico.png" alt="Domótica optimizada para un futuro inteligente"
-            width="120" height="120" />
-        </span>
-        <div class="columnaFooter">
-          <p style="text-align: left">¿Quieres conocer aún más de nosotros?</p>
-          <a class="buttonInformation2" href="#">Da click aquí</a>
+  <div class="modal" id="modal">
+    <span class="close">&times;</span>
+    <section class="ventanaEmergente articuloCortina1" id="modalContent">
+      <div class="manual">
+
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="logoEspacio">
+      <span class="logoFooter">
+        <img src="/assets/IMAGES/LogoMonocromatico.png" alt="Domótica optimizada para un futuro inteligente" width="120"
+          height="120" />
+      </span>
+      <div class="columnaFooter">
+        <p style="text-align: left">¿Quieres conocer aún más de nosotros?</p>
+        <a class="buttonInformation2" href="#">Da click aquí</a>
+      </div>
+    </div>
+    <hr>
+    <div class="fila2">
+      <div class="seccionesFooter">
+        <div class="linksRapidos">
+          <h4>ENLACES RÁPIDOS</h4>
+          <ul>
+            <li><a href="/assets/dofi.html">Inicio</a></li>
+            <li><a href="/assets/faq">FAQ</a></li>
+            <li><a href="/assets/contacto">Contáctanos</a></li>
+          </ul>
+        </div>
+        <div class="recursos">
+          <h4>RECURSOS</h4>
+          <ul>
+            <li><a href="/pages/faq">Preguntas Técnicas</a></li>
+          </ul>
+        </div>
+
+        <div class="redes">
+          <h4>SUSCRÍBETE</h4>
+          <!--  action="/subscribe" method="post" -->
+          <form>
+            <input type="email" placeholder="Tu correo electrónico" required />
+            <button class="buttonInformation3" onclick="botonSuscripcion()" type="submit">Suscribirse</button>
+          </form>
+        </div>
+
+        <div class="legal">
+
+          <!-- <a href="/tyc">TÉRMINOS Y CONDICIONES</a> -->
+          <h4><a href="/pages/tyc">TÉRMINOS Y CONDICIONES</a></h4>
+
+        </div>
+
+        <div class="redes">
+          <h4>SÍGUENOS</h4>
+          <a href="#"><img src="/assets/IMAGES/Facebook.ico" alt="Facebook" class="iconos" /></a>
+          <a href="#"><img src="/assets/IMAGES/Twitter.ico" alt="X" class="iconos" /></a>
+          <a href="#"><img src="/assets/IMAGES/Instagram.ico" alt="Instagram" class="iconos" /></a>
+          <a href="#"><img src="/assets/IMAGES/LinkedIn.ico" alt="LinkedIn" class="iconos" /></a>
+          <a href="#"><img src="/assets/IMAGES/TikTok.ico" alt="TikTok" class="iconos" /></a>
         </div>
       </div>
-      <hr>
-      <div class="fila2">
-        <div class="seccionesFooter">
-          <div class="linksRapidos">
-            <h4>ENLACES RÁPIDOS</h4>
-            <ul>
-              <li><a href="/assets/dofi.html">Inicio</a></li>
-              <li><a href="/assets/faq">FAQ</a></li>
-              <li><a href="/assets/contacto">Contáctanos</a></li>
-            </ul>
-          </div>
-          <div class="recursos">
-            <h4>RECURSOS</h4>
-            <ul>
-              <li><a href="/pages/faq">Preguntas Técnicas</a></li>
-            </ul>
-          </div>
-
-          <div class="redes">
-            <h4>SUSCRÍBETE</h4>
-            <!--  action="/subscribe" method="post" -->
-            <form>
-              <input type="email" placeholder="Tu correo electrónico" required />
-              <button class="buttonInformation3" onclick="botonSuscripcion()" type="submit">Suscribirse</button>
-            </form>
-          </div>
-
-          <div class="legal">
-
-            <!-- <a href="/tyc">TÉRMINOS Y CONDICIONES</a> -->
-            <h4><a href="/pages/tyc">TÉRMINOS Y CONDICIONES</a></h4>
-
-          </div>
-
-          <div class="redes">
-            <h4>SÍGUENOS</h4>
-            <a href="#"><img src="/assets/IMAGES/Facebook.ico" alt="Facebook" class="iconos" /></a>
-            <a href="#"><img src="/assets/IMAGES/Twitter.ico" alt="X" class="iconos" /></a>
-            <a href="#"><img src="/assets/IMAGES/Instagram.ico" alt="Instagram" class="iconos" /></a>
-            <a href="#"><img src="/assets/IMAGES/LinkedIn.ico" alt="LinkedIn" class="iconos" /></a>
-            <a href="#"><img src="/assets/IMAGES/TikTok.ico" alt="TikTok" class="iconos" /></a>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="fila3">
-        <p>&copy; 2024 DOFI. Todos los derechos reservados.</p>
-      </div>
-      </div>
-    </footer>
+    </div>
+    <hr>
+    <div class="fila3">
+      <p>&copy; 2024 DOFI. Todos los derechos reservados.</p>
+    </div>
+    </div>
+  </footer>
 
 </body>
 
