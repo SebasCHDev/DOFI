@@ -20,31 +20,29 @@ categoriaBtns.forEach(btn => {
 
 function mostrarSeccion(seccion) {
     const secciones = document.querySelectorAll('.secciones');
-    const noVendido = document.querySelectorAll('.noVendido');
-
     secciones.forEach(sec => {
         sec.style.display = 'none';
     });
 
-    if (seccion === 'all') {
+    const seccionesGenerales = document.querySelectorAll('.seccionesGenerales');
+    seccionesGenerales.forEach(gen => {
+        gen.style.display = 'none';
+    });
+
+    if (seccion === 'masVendidos') {
         secciones.forEach(sec => {
             sec.style.display = 'block';
         });
-        noVendido.forEach(article => {
-            article.style.display = 'none';
-        });
     } else {
         const seccionSeleccionada = document.querySelector(`.${seccion}`);
-        seccionSeleccionada.style.display = 'block';
+        if (seccionSeleccionada) seccionSeleccionada.style.display = 'block';
 
-        const articulosNoVendidos = seccionSeleccionada.querySelectorAll('.noVendido');
-        articulosNoVendidos.forEach(article => {
-            article.style.display = 'block';
-            article.style.backgroundImage = 'block';
-        });
+        const seccionGeneral = document.querySelector(`.seccionesGenerales.${seccion}`);
+        if (seccionGeneral) seccionGeneral.style.display = 'block';
     }
 }
-mostrarSeccion('all');
+
+mostrarSeccion('masVendidos');
 
 
 //zoom en imagen
@@ -105,26 +103,26 @@ const closeModal = document.querySelector(".close");
 closeModal.addEventListener("click", () => {
     const modal = document.getElementById("modal");
     modal.style.display = "none";
-    location.reload(); 
+    location.reload();
 });
 
 window.addEventListener("click", (e) => {
     const modal = document.getElementById("modal");
     if (e.target === modal) {
         modal.style.display = "none";
-        location.reload(); 
+        location.reload();
     }
 });
 
- //selección cantidad
+//selección cantidad
 
- const selects = document.querySelectorAll('.cantidad');
+const selects = document.querySelectorAll('.cantidad');
 
- selects.forEach((select) => {
-   for (let i = 1; i <= 20; i++) {
-     const option = document.createElement('option');
-     option.value = i;
-     option.textContent = i;
-     select.appendChild(option);
-   }
- });
+selects.forEach((select) => {
+    for (let i = 1; i <= 20; i++) {
+        const option = document.createElement('option');
+        option.value = i;
+        option.textContent = i;
+        select.appendChild(option);
+    }
+});
