@@ -150,12 +150,13 @@ header {
 
 .segundaFila {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(26%, 1fr));
     column-gap: 14px;
-    margin-bottom: 3%;
+    width: 99%;
 }
 
-.noVendidos {
+.seccionesGenerales {
+    margin: 0 0 0 20%;
     display: none;
 }
 
@@ -545,6 +546,10 @@ tr {
     background-image: url("/assets/IMAGES/Productos/Cortinas/cortina4.jpg");
 }
 
+#cortina5 {
+    background-image: url("/assets/IMAGES/Productos/Cortinas/cortina5.jpg");
+}
+
 #interruptores {
     background-image: url("/assets/IMAGES/Productos/Cortinas/cortina4.jpg");
 }
@@ -561,26 +566,46 @@ tr {
     background-image: url("/assets/IMAGES/Productos/Interruptores/interruptor3.jpg");
 }
 
+#interruptores4 {
+    background-image: url("/assets/IMAGES/Productos/Interruptores/interruptor4.jpg");
+}
+
 #camaras1 {
-    background-image: url("/assets/IMAGES/camara1.jpg");
+    background-image: url("/assets/IMAGES/Productos/Camaras/camara1.jpg");
 }
 
 #camaras2 {
-    background-image: url("/assets/IMAGES/camara2.jpg");
+    background-image: url("/assets/IMAGES/Productos/Camaras/camara2.jpg");
 }
 
 #camaras3 {
-    background-image: url("/assets/IMAGES/camara1.jpg");
+    background-image: url("/assets/IMAGES/Productos/Camaras/camara3.jpg");
+}
+
+#camaras4 {
+    background-image: url("/assets/IMAGES/Productos/Camaras/camara4.jpg");
+}
+
+#camaras5 {
+    background-image: url("/assets/IMAGES/Productos/Camaras/camara5.jpg");
 }
 
 #iluminacion1 {
-    background-image: url("/assets/IMAGES/iluminacion1.jpg");
+    background-image: url("/assets/IMAGES/Productos/Iluminacion/iluminacion1.jpg");
 }
 
 #iluminacion2 {
-    background-image: url("/assets/IMAGES/iluminacion2.jpg");
+    background-image: url("/assets/IMAGES/Productos/Iluminacion/iluminacion2.jpg");
 }
 
 #iluminacion3 {
-    background-image: url("/assets/IMAGES/iluminacion1.jpg");
+    background-image: url("/assets/IMAGES/Productos/Iluminacion/iluminacion3.jpg");
+}
+
+#iluminacion4 {
+    background-image: url("/assets/IMAGES/Productos/Iluminacion/iluminacion4.jpg");
+}
+
+#iluminacion5 {
+    background-image: url("/assets/IMAGES/Productos/Iluminacion/iluminacion5.jpg");
 }
