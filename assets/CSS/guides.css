@@ -239,38 +239,34 @@ header {
 }
 
 .modal {
-    display: none;
-    position: fixed;
-    top: 0;
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.7); 
     justify-content: center;
     align-items: center;
 }
 
 .modalContent {
-    max-width: 90%;
-    max-height: 80%;
+    display: flex;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: 80%; 
+    height: 80%;
 }
 
 .close {
     position: absolute;
-    top: 20px;
+    top: 0;
     right: 30px;
-    color: white;
+    color: #aaa;
     font-size: 30px;
+    font-weight: bold;
     cursor: pointer;
-}
-
-.ventanaEmergente {
-    display: flex;
-    z-index: 1000;
-    width: 80%;
-    height: 100%;
-    background-color: white;
-    color: black;
 }
 
 .info {
@@ -279,11 +275,12 @@ header {
     grid-template-rows: 1;
     gap: 10px;
     width: 100%;
-    height: 96%;
-    /* border: red solid 2px; */
+    height: 100%;
+    border: red solid 2px;
     padding: 15px;
     overflow: hidden;
     display: flex;
+    background-color: white;
 }
 
 .columna1 {
