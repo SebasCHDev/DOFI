@@ -342,7 +342,7 @@ header {
     width: 50%;
     height: auto;
     text-align: center;
-    overflow: scroll;
+    overflow-y: scroll;
     box-sizing: border-box;
     padding: 10px;
 }
