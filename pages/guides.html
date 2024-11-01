@@ -9,8 +9,7 @@
   <link rel="stylesheet" href="/assets/CSS/normalize.css">
   <link rel="stylesheet" href="/assets/CSS/footer.css">
   <script src="https://kit.fontawesome.com/516d057011.js" crossorigin="anonymous"></script>
-
-
+  <title>Automatización</title>
 </head>
 
 <body>
@@ -86,6 +85,18 @@
           </div>
         </article>
         <article class="articulos">
+          <div id="cortina3" class="imgZoom"></div>
+          <p class="descripcion">
+            <span>Motor Wi-Fi* para automatizar persianas</span>
+            <span class="verMas" onclick="abrirModal('articuloCortina3')">Ver más <i
+                class="fa-solid fa-up-right-from-square fa-bounce"></i></span>
+          </p>
+          <div class="carrito">
+            <span class="descuento">$ 570.000</span><span class="precio">$ 513.000</span><br>
+            <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+          </div>
+        </article>
+        <article class="articulos">
           <div id="cortina4" class="imgZoom"></div>
           <p class="descripcion">
             <span>Relé para interruptor de persiana LoraTap</span>
@@ -94,15 +105,6 @@
           </p>
           <div class="carrito">
             <span class="descuento">$ 100.000</span><span class="precio">$ 85.000</span><br>
-            <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
-          </div>
-        </article>
-        <article class="articulos">
-          <div id="cortina3" class="imgZoom"></div>
-          <p class="descripcion">Motor Wi-Fi* para automatizar persianas<br><br>
-          </p>
-          <div class="carrito">
-            <span class="descuento">$ 570.000</span><span class="precio">$ 513.000</span><br>
             <button class="agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
           </div>
         </article>
@@ -224,23 +226,29 @@
           <div class="info">
             <div class="columna1">
               <div class="carrusel">
-                <img class="imagenGrande" src="/assets/IMAGES/Productos/Cortinas/cortina1.jpg">
+                <img class="imagenGrande"
+                  src="/assets/IMAGES/Productos/Cortinas/cortina1.jpg">
               </div>
               <div class="imagenesPequeñas">
-                <img class="imagenPequeña activa" src="/assets/IMAGES/Productos/Cortinas/cortina1.jpg" alt=""
+                <img class="imagenPequeña activa"
+                  src="/assets/IMAGES/Productos/Cortinas/cortina1.jpg" alt=""
                   data-imagen="/assets/IMAGES/Productos/Cortinas/cortina1.jpg">
-                <img class="imagenPequeña" src="/assets/IMAGES/Productos/Cortinas/cortina1-1.jpg" alt=""
+                <img class="imagenPequeña"
+                  src="/assets/IMAGES/Productos/Cortinas/cortina1-1.jpg" alt=""
                   data-imagen="/assets/IMAGES/Productos/Cortinas/cortina1-1.jpg">
-                <img class="imagenPequeña" src="/assets/IMAGES/Productos/Cortinas/cortina1-2.jpg" alt=""
+                <img class="imagenPequeña"
+                  src="/assets/IMAGES/Productos/Cortinas/cortina1-2.jpg" alt=""
                   data-imagen="/assets/IMAGES/Productos/Cortinas/cortina1-2.jpg">
-                <img class="imagenPequeña" src="/assets/IMAGES/Productos/Cortinas/cortina1-3.jpg" alt=""
+                <img class="imagenPequeña"
+                  src="/assets/IMAGES/Productos/Cortinas/cortina1-3.jpg" alt=""
                   data-imagen="/assets/IMAGES/Productos/Cortinas/cortina1-3.jpg">
-                <img class="imagenPequeña" src="/assets/IMAGES/Productos/Cortinas/cortina1-4.jpg" alt=""
+                <img class="imagenPequeña"
+                  src="/assets/IMAGES/Productos/Cortinas/cortina1-4.jpg" alt=""
                   data-imagen="/assets/IMAGES/Productos/Cortinas/cortina1-4.jpg">
               </div>
               <div class="manual">
-                <a href="/assets/IMAGES/Productos/Cortinas/Manuales/cortina1.pdf"
-                  target="_blank">Manual de instalación.pdf</a>
+                <a href="/assets/IMAGES/Productos/Cortinas/Manuales/cortina1.pdf" target="_blank">Manual de
+                  instalación.pdf</a>
               </div>
             </div>
             <nav class="columna2">
@@ -249,19 +257,22 @@
                 Aluminio
               </div>
               <div class="precioCompleto">
-                <p>Precio producto: $ 830.000</p>
-                <p>Precio instalación: $ 100.000</p>
-                <p>Descuento: 8%</p>
+                <p>Precio producto:
+                  <span class="precio">$763.600</span>
+                  <span class="descuento">$800.000</span>
+                </p>
+                <p>Precio instalación: $100.000</p>
+                <p>Precio total (con instalación): $863.600</p>
               </div>
               <div class="envio">
                 <p class="stock">En stock</p>
                 <label for="numero"></label>
-                <select id="numero" name="numero" class="cantidad">
+                <select name="numero" class="cantidad">
                   <option value="">Selecciona la cantidad</option>
                 </select>
               </div>
               <div class="detalles">
-                <h3>Detalles</h3>
+                <h3>Detalles Técnicos</h3>
                 <table class="tabla">
                   <tr>
                     <td class="tipos">Marca</td>
@@ -321,27 +332,131 @@
             </nav>
           </div>
         </section>
+        <section class="ventanaEmergente modalContent" id="articuloCortina3">
+          <div class="info">
+            <div class="columna1">
+              <div class="carrusel">
+                <img class="imagenGrande"
+                  src="/assets/IMAGES/Productos/Cortinas/cortina3.jpg">
+              </div>
+              <div class="imagenesPequeñas">
+                <img class="imagenPequeña activa"
+                  src="/assets/IMAGES/Productos/Cortinas/cortina3.jpg" alt=""
+                  data-imagen="/assets/IMAGES/Productos/Cortinas/cortina3.jpg">
+                <img class="imagenPequeña"
+                  src="/assets/IMAGES/Productos/Cortinas/cortina3-1.jpg" alt=""
+                  data-imagen="/assets/IMAGES/Productos/Cortinas/cortina3-1.jpg">
+                <img class="imagenPequeña"
+                  src="/assets/IMAGES/Productos/Cortinas/cortina3-2.jpg" alt=""
+                  data-imagen="/assets/IMAGES/Productos/Cortinas/cortina3-2.jpg">
+                <img class="imagenPequeña"
+                  src="/assets/IMAGES/Productos/Cortinas/cortina3-3.jpg" alt=""
+                  data-imagen="/assets/IMAGES/Productos/Cortinas/cortina3-3.jpg">
+                <img class="imagenPequeña"
+                  src="/assets/IMAGES/Productos/Cortinas/cortina3-4.jpg" alt=""
+                  data-imagen="/assets/IMAGES/Productos/Cortinas/cortina3-4.jpg">
+              </div>
+              <div class="manual">
+                <a href="/assets/IMAGES/Productos/Cortinas/Manuales/cortina3.pdf" target="_blank">Manual de
+                  instalación.pdf</a>
+              </div>
+            </div>
+            <nav class="columna2">
+              <div class="nombre">Motor Wi-Fi* para automatizar persianas
+              </div>
+              <div class="precioCompleto">
+                <p>Precio producto:
+                  <span class="precio">$513.000</span>
+                  <span class="descuento">$570.000</span>
+                </p>
+                <p>Precio instalación: $ 25.000</p>
+                <p>Precio total (con instalación): $538.000</p>
+              </div>
+              <div class="envio">
+                <p class="stock">En stock</p>
+                <label for="numero"></label>
+                <select name="numero" class="cantidad">
+                  <option value="">Selecciona la cantidad</option>
+                </select>
+              </div>
+              <div class="detalles">
+                <h3>Detalles Técnicos</h3>
+                <table class="tabla">
+                  <tr>
+                    <td class="tipos">Alimentación</td>
+                    <td>12,6 V--- 1 A</td>
+                  </tr>
+                  <tr>
+                    <td class="tipos">Torque</td>
+                    <td>1,35 Nm</td>
+                  </tr>
+                  <tr>
+                    <td class="tipos">Frecuencia Wi-Fi</td>
+                    <td>2,4 GHz</td>
+                  </tr>
+                  <tr>
+                    <td class="tipos">Estándar</td>
+                    <td>IEEE 802.11 b/g/n</td>
+                  </tr>
+                  <tr>
+                    <td class="tipos">Alimentación Voltaje</td>
+                    <td>100 a 240 V~ 50/60 Hz 800 mA</td>
+                  </tr>
+                  <tr>
+                    <td class="tipos">Salida Voltaje</td>
+                    <td>12,6 V--- 1 A</td>
+                  </tr>
+                  <tr>
+                    <td class="tipos">Alimentación Control Remoto</td>
+                    <td>3 V---(1 x CR2450)</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="acercaDe">
+                <h3>Acerca de este producto</h3>
+                <span>
+                  - Convierte tu casa en una Smart Home. <br>
+                  - Con este motor Wi-Fi* disfruta la comodidad de controlar tus persianas o cortinas con tu celular, sin
+                  importar donde estés. Podrás abrirlas, cerrarlas y automatizarlas por horarios o por cuenta regresiva. <br>
+                  - El funcionamiento se administra por medio de nuestra app Steren Home (disponible en app Store* y
+                  Google* Play), donde puedes agregar más dispositivos o dar el control a otras personas. <br>
+                  - Es compatible con los asistentes Alexa** y Google* Assistant**, que te dan comodidad de uso dentro de
+                  tu hogar para que puedas activar o desactivar el mecanismo o incluirlo en rutinas todo con tu voz. <br>
+                  - Tiene 3 modos de control: por medio de tu celular o tablet, con un control remoto incluido o
+                  manualmente. <br>
+                  - Incorpora una batería de respaldo para no perder la programación en caso de que se vaya la luz. Es
+                  compatible con diferentes tipos de cordón y lo puedes instalar fácilmente con cinta adhesiva incluida
+                  o con pijas incluidas.
+                </span>
+              </div>
+            </nav>
+          </div>
+        </section>
         <section class="ventanaEmergente modalContent" id="articuloCortina4">
           <div class="info">
             <div class="columna1">
               <div class="carrusel">
-                <img class="imagenGrande" src="/assets/IMAGES/Productos/Cortinas/cortina4.jpg">
+                <img class="imagenGrande"
+                  src="/assets/IMAGES/Productos/Cortinas/cortina4.jpg">
               </div>
               <div class="imagenesPequeñas">
-                <img class="imagenPequeña activa" src="/assets/IMAGES/Productos/Cortinas/cortina4.jpg" alt=""
-                  data-imagen="/assets/IMAGES/Productos/Cortinas/cortina1.jpg">
-                <img class="imagenPequeña" src="/assets/IMAGES/Productos/Cortinas/cortina1-1.jpg" alt=""
-                  data-imagen="/assets/IMAGES/Productos/Cortinas/cortina1-1.jpg">
-                <img class="imagenPequeña" src="/assets/IMAGES/Productos/Cortinas/cortina1-2.jpg" alt=""
-                  data-imagen="/assets/IMAGES/Productos/Cortinas/cortina1-2.jpg">
-                <img class="imagenPequeña" src="/assets/IMAGES/Productos/Cortinas/cortina1-3.jpg" alt=""
-                  data-imagen="/assets/IMAGES/Productos/Cortinas/cortina1-3.jpg">
-                <img class="imagenPequeña" src="/assets/IMAGES/Productos/Cortinas/cortina1-4.jpg" alt=""
-                  data-imagen="/assets/IMAGES/Productos/Cortinas/cortina1-3.jpg">
+                <img class="imagenPequeña activa"
+                  src="/assets/IMAGES/Productos/Cortinas/cortina4.jpg" alt=""
+                  data-imagen="/assets/IMAGES/Productos/Cortinas/cortina4.jpg">
+                <img class="imagenPequeña"
+                  src="/assets/IMAGES/Productos/Cortinas/cortina4-1.jpg" alt=""
+                  data-imagen="/assets/IMAGES/Productos/Cortinas/cortina4-1.jpg">
+                <img class="imagenPequeña"
+                  src="/assets/IMAGES/Productos/Cortinas/cortina4-2.jpg" alt=""
+                  data-imagen="/assets/IMAGES/Productos/Cortinas/cortina4-2.jpg">
+                <img class="imagenPequeña"
+                  src="/assets/IMAGES/Productos/Cortinas/cortina4-3.jpg" alt=""
+                  data-imagen="/assets/IMAGES/Productos/Cortinas/cortina4-3.jpg">
+                <img class="imagenPequeña"
+                  src="/assets/IMAGES/Productos/Cortinas/cortina4-4.jpg" alt=""
+                  data-imagen="/assets/IMAGES/Productos/Cortinas/cortina4-4.jpg">
               </div>
               <div class="manual">
-                <a href="/assets/IMAGES/Productos/Cortinas/Manuales/cortina1.pdf"
-                  target="_blank">Manual de instalación.pdf</a>
               </div>
             </div>
             <nav class="columna2">
@@ -350,73 +465,83 @@
                 300W
               </div>
               <div class="precioCompleto">
-                <p>Precio producto: $ 830.000</p>
-                <p>Precio instalación: $ 100.000</p>
-                <p>Descuento: 8%</p>
+                <p>Precio producto:
+                  <span class="precio">$85.000</span>
+                  <span class="descuento">$100.000</span>
+                </p>
+                <p>Precio instalación: $ 25.000</p>
+                <p>Precio total (con instalación): $110.000</p>
               </div>
               <div class="envio">
                 <p class="stock">En stock</p>
                 <label for="numero"></label>
-                <select id="numero" name="numero" class="cantidad">
+                <select name="numero" class="cantidad">
                   <option value="">Selecciona la cantidad</option>
                 </select>
               </div>
               <div class="detalles">
-                <h3>Detalles</h3>
+                <h3>Detalles Técnicos</h3>
                 <table class="tabla">
                   <tr>
+                    <td class="tipos">Modo de funcionamiento</td>
+                    <td>ON-OFF-ON</td>
+                  </tr>
+                  <tr>
+                    <td class="tipos">Corriente nominal</td>
+                    <td>1,5 Amperio</td>
+                  </tr>
+                  <tr>
+                    <td class="tipos">Tensión de funcionamiento</td>
+                    <td>220 Voltios</td>
+                  </tr>
+                  <tr>
+                    <td class="tipos">Tipo de contacto</td>
+                    <td>常闭</td>
+                  </tr>
+                  <tr>
+                    <td class="tipos">Tipo de conector</td>
+                    <td>Abrazadera</td>
+                  </tr>
+                  <tr>
                     <td class="tipos">Marca</td>
-                    <td>ABALON</td>
+                    <td>LoraTap</td>
                   </tr>
                   <tr>
-                    <td class="tipos">Color</td>
-                    <td>Gris Aluminio</td>
+                    <td class="tipos">Terminal</td>
+                    <td>Física</td>
                   </tr>
                   <tr>
-                    <td class="tipos">Dimensiones del producto</td>
-                    <td>106l. x 23an. centímetros</td>
+                    <td class="tipos">Dimensiones del producto: largo x ancho x alto</td>
+                    <td>48 x 47 x 22 milímetros</td>
                   </tr>
                   <tr>
-                    <td class="tipos">Material</td>
-                    <td>Aluminium</td>
+                    <td class="tipos">Tipo de circuito</td>
+                    <td>Automatización</td>
                   </tr>
                   <tr>
-                    <td class="tipos">Tipo de montaje</td>
-                    <td>Montaje en techo, Montaje en pared</td>
-                  </tr>
-                  <tr>
-                    <td class="tipos">Peso del producto</td>
-                    <td>3500 Gramos</td>
-                  </tr>
-                  <tr>
-                    <td class="tipos">Recomendación de peso máximo</td>
-                    <td>3500 Gramos</td>
-                  </tr>
-                  <tr>
-                    <td class="tipos">Duración de la disponibilidad de piezas de recambio</td>
-                    <td>en la UE 10 Años</td>
-                  </tr>
-                  <tr>
-                    <td class="tipos">Fabricante</td>
-                    <td>ABALON</td>
+                    <td class="tipos">Tipo de accionador</td>
+                    <td>motor</td>
                   </tr>
                 </table>
               </div>
               <div class="acercaDe">
                 <h3>Acerca de este producto</h3>
                 <span>
-                  - Este kit es de máximo 2 metros (KITs disponibles: 2,3,4,5 y 6m). El motor es Wifi y se puede
-                  controlar
-                  mediante Alexa, Google Home, una App móvil (Tuya) o cualquier otro dispositivo sincronizable via Wifi.
-                  También se puede controlar con un mando. Garantía de 3 años. <br>
-                  - Vídeos de montaje e instalación disponibles (inglés, alemán, italiano, francés, español). <br>
-                  - La cortina se puede accionar manualmente. El motor queda oculto detrás de la cortina. Dos modelos de
-                  apertura: central o lateral. El riel puede ser instalado a pared o techo. <br>
-                  - Los rieles son compatibles con todas las cortinas menos las cortinas ollaos. <br>
-                  - ABALON Riel Motorizado para Cortinas, 2 Metros, Motor WiFi Compatible con Alexa Google Home y App
-                  móvil,
-                  Smart Home, con Mando, Riel Eléctrico, Cortinas Automáticas Motorizadas. (2) <br>
-                  - Visita nuestra tienda de DOFI para saber más
+                  - Compatible con el Interruptor TRADICIONAL: es una versión actualizada que es compatible con el
+                  interruptor de persiana tradicional. Puedes utilizar este interruptor conectado mientras mantiene tu
+                  interruptor original. <br>
+                  - Control de Aplicaciones Desde Cualquier Lugar: conecta este interruptor WiFi directamente a tu red
+                  Wi-Fi de 2,4 G (compatible con Android e iOS) para garantizar un control remoto sin límites mediante
+                  la aplicación Smart Life (gratuita). No requiere concentrador. <br>
+                  - Función de Temporizador y Programa: a partir de la aplicación "Smart Life" en tu smartphone, puedes
+                  gestionar programas. Con la función de temporizador, puedes abrir y cerrar la persiana a una hora
+                  precisa. <br>
+                  - Control de Voz y Control de Grupo: compatible con Echo Alexa y Google Home, puedes abrir y cerrar la
+                  persiana/cortina por voz. Sin tocar el interruptor. La función de control en grupo te permite abrir y
+                  cerrar hasta 20 persianas en grupo a la vez. <br>
+                  -Garantía de 2 años. El producto es CE y RoHS. Es un producto muy seguro y práctico. ¡No dudes en
+                  comprar! Instrucciones: el producto solo es compatible con el motor con 4 cables (2 cables de fase, 1
+                  cable neutro y 1 cable de tierra).
                 </span>
               </div>
             </nav>
