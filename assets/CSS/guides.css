@@ -323,11 +323,12 @@ header {
 }
 
 .imagenPequeña {
-    width: 15%;
+    width: 12%;
     cursor: pointer;
     border: 2px solid #ccc;
     border-radius: 5px;
     transition: transform 0.3s;
+    object-fit: contain;
 }
 
 .imagenPequeña:hover {
