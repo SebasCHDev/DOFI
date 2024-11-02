@@ -1,36 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiénes Somos</title>
     <link rel="stylesheet" href="/assets/CSS/mv.css">
+    <link rel="stylesheet" href="/assets/CSS/footer.css">
 </head>
+
 <body>
     <header>
         <h1>Quiénes Somos</h1>
     </header>
     <main>
         <section class="quienes-somos">
-            <h2>Nuestra Misión</h2>
-            <p>
-                En Dofi, nos dedicamos a ofrecer soluciones de domótica que transforman tu hogar en un espacio inteligente y eficiente. Nuestra misión es mejorar tu calidad de vida mediante la automatización de procesos cotidianos.
+            <h2>Misión</h2>
+            <p id="parrafos">
+                En Dofi, nos dedicamos a ofrecer soluciones de domótica que transforman tu hogar en un espacio
+                inteligente y eficiente. Nuestra misión es mejorar tu calidad de vida mediante la automatización de
+                procesos cotidianos.
             </p>
-            <h2>Nuestro Equipo</h2>
-            <p>
-                Contamos con un equipo de expertos en tecnología y diseño que trabaja constantemente para ofrecerte las mejores soluciones. Nuestra pasión por la innovación nos impulsa a mantenernos a la vanguardia en el campo de la domótica.
+            <h2>Visión</h2>
+            <p id="parrafos">
+                Contamos con un equipo de expertos en tecnología y diseño que trabaja constantemente para ofrecerte las
+                mejores soluciones. Nuestra pasión por la innovación nos impulsa a mantenernos a la vanguardia en el
+                campo de la domótica.
             </p>
-            <h2>Valores</h2>
-            <ul>
-                <li>Innovación</li>
-                <li>Calidad</li>
-                <li>Sostenibilidad</li>
-                <li>Compromiso con el cliente</li>
-            </ul>
+            <h2>Nuestro equipo</h2>
+            <p id="parrafos">
+                Contamos con un equipo de expertos en tecnología y diseño que trabaja constantemente para ofrecerte las
+                mejores soluciones. Nuestra pasión por la innovación nos impulsa a mantenernos a la vanguardia en el
+                campo de la domótica.
+            </p>
+            <nav class="listaValores">
+                <a href="#">Innovación</a>
+                <a href="#">Calidad</a>
+                <a href="#">Sostenibilidad</a>
+                <a href="#">Compromiso</a>
+            </nav>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Dofi. Todos los derechos reservados.</p>
+    <footer class="footer">
+        <div class="logoEspacio">
+            <span class="logoFooter">
+                <img src="/assets/IMAGES/LogoMonocromatico.png" alt="Domótica optimizada para un futuro inteligente"
+                    width="120" height="120" />
+            </span>
+            <div class="columnaFooter">
+                <p id="nosotrosFooter" style="text-align: left">¿Quieres conocer aún más de nosotros?</p>
+                <a class="buttonInformation2" href="/pages/mv.html">Da click aquí</a>
+            </div>
+        </div>
+        <hr>
+        <div class="fila2">
+            <div class="seccionesFooter">
+                <div class="linksRapidos">
+                    <h4>ENLACES RÁPIDOS</h4>
+                    <ul>
+                        <li><a href="/pages/dofi.html">Inicio</a></li>
+                        <li><a href="/assets/faq">FAQ</a></li>
+                        <li><a href="https://wa.me/573042460601?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20informaci%C3%B3n"
+                                target="_blank">Contáctanos</a></li>
+                    </ul>
+                </div>
+
+                <div class="redes">
+                    <h4>SUSCRÍBETE</h4>
+                    <!--  action="/subscribe" method="post" -->
+                    <form>
+                        <input type="email" placeholder="Tu correo electrónico" required />
+                        <button class="buttonInformation3" onclick="botonSuscripcion()"
+                            type="submit">Suscribirse</button>
+                    </form>
+                </div>
+
+                <div class="legal">
+
+                    <!-- <a href="/tyc">TÉRMINOS Y CONDICIONES</a> -->
+                    <h4><a href="/pages/tyc">TÉRMINOS Y CONDICIONES</a></h4>
+
+                </div>
+
+                <div class="redes">
+                    <h4>SÍGUENOS</h4>
+                    <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img
+                            src="/assets/IMAGES/Facebook.ico" alt="Facebook" class="iconos" /></a>
+                    <a href="https://x.com/?lang=es" target="_blank"><img src="/assets/IMAGES/Twitter.ico" alt="X"
+                            class="iconos" /></a>
+                    <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="/assets/IMAGES/Instagram.ico"
+                            alt="Instagram" class="iconos" /></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="/assets/IMAGES/LinkedIn.ico"
+                            alt="LinkedIn" class="iconos" /></a>
+                    <a href="https://www.tiktok.com/en" target="_blank"><img src="/assets/IMAGES/TikTok.ico"
+                            alt="TikTok" class="iconos" /></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="fila3">
+            <p>&copy; 2024 DOFI. Todos los derechos reservados.</p>
+        </div>
+        </div>
     </footer>
 </body>
+
 </html>
