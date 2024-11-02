@@ -7,6 +7,7 @@
     <title>Quiénes Somos</title>
     <link rel="stylesheet" href="/assets/CSS/mv.css">
     <link rel="stylesheet" href="/assets/CSS/footer.css">
+    <link rel="stylesheet" href="/assets/CSS/normalize.css">
 </head>
 
 <body>
@@ -34,11 +35,12 @@
                 campo de la domótica.
             </p>
             <nav class="listaValores">
-                <a href="#">Innovación</a>
-                <a href="#">Calidad</a>
-                <a href="#">Sostenibilidad</a>
-                <a href="#">Compromiso</a>
+                <a href="#" onclick="emojiRainInnovacion(event)">Innovación</a>
+                <a href="#" onclick="emojiRainCalidad(event)">Calidad</a>
+                <a href="#" onclick="emojiRainSostenibilidad(event)">Sostenibilidad</a>
+                <a href="#" onclick="emojiRainCompromiso(event)">Compromiso</a>
             </nav>
+
         </section>
     </main>
     <footer class="footer">
@@ -59,7 +61,7 @@
                     <h4>ENLACES RÁPIDOS</h4>
                     <ul>
                         <li><a href="/pages/dofi.html">Inicio</a></li>
-                        <li><a href="/assets/faq">FAQ</a></li>
+                        <li><a href="/pages/faq.html">FAQ</a></li>
                         <li><a href="https://wa.me/573042460601?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20informaci%C3%B3n"
                                 target="_blank">Contáctanos</a></li>
                     </ul>
@@ -67,7 +69,6 @@
 
                 <div class="redes">
                     <h4>SUSCRÍBETE</h4>
-                    <!--  action="/subscribe" method="post" -->
                     <form>
                         <input type="email" placeholder="Tu correo electrónico" required />
                         <button class="buttonInformation3" onclick="botonSuscripcion()"
@@ -77,7 +78,6 @@
 
                 <div class="legal">
 
-                    <!-- <a href="/tyc">TÉRMINOS Y CONDICIONES</a> -->
                     <h4><a href="/pages/tyc">TÉRMINOS Y CONDICIONES</a></h4>
 
                 </div>
@@ -104,5 +104,7 @@
         </div>
     </footer>
 </body>
+
+<script src="/assets/JS/emojis.js"></script>
 
 </html>

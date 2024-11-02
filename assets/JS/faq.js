@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
             const answer = this.nextElementSibling;
             const arrow = this.querySelector(".arrow");
 
-            // Alterna la visibilidad del párrafo
             if (answer.style.maxHeight) {
                 answer.style.maxHeight = null;
                 answer.classList.remove("open");
@@ -14,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 answer.classList.add("open");
             }
 
-            // Alterna la rotación de la flecha
             arrow.classList.toggle("rotate");
         });
     });

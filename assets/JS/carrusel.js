@@ -20,7 +20,6 @@ let runAutoRun = setTimeout(()=>{
     nextDom.click();
 }, timeAutoNext);
 
-/* el item activo por default sera el 1, al presionar next el primer item ira a la posicion final y seguira el siguiente elemento. */
 function showSlider(type){
     let itemSlider = document.querySelectorAll('.carousel .list .item');
     let itemThumbnail = document.querySelectorAll('.carousel .thumbnail .item');
