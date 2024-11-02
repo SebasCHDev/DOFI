@@ -2,36 +2,14 @@
 
 body {
   height: auto;
+  width: 100%;
+  overflow-y: scroll;
 }
 
 .mainContainer {
   height: 100%;
   width: 100%;
   display: grid;
-}
-
-.submenu ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  background-color: rgba(5, 196, 174, 0.986);
-  margin: 5px;
-}
-
-.submenu li {
-  margin: 0 50px;
-}
-
-.submenu a {
-  text-decoration: none;
-  color: #444242;
-  font-size: 1em;
-}
-
-.submenu a:hover {
-  color: #2156b8;
-  text-decoration: underline;
 }
 
 .iconos {
