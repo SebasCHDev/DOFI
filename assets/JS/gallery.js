@@ -3,7 +3,7 @@ const modalImage = document.getElementById("modal-image");
 const images = document.querySelectorAll(".gallery-image");
 const closeModal = document.querySelector(".close");
 
-images.forEach(image => {
+images.forEach((image) => {
   image.addEventListener("click", () => {
     modal.style.display = "flex";
     modalImage.src = image.src;
@@ -22,7 +22,7 @@ window.addEventListener("click", (e) => {
 
 function showSection(sectionId) {
   const sections = document.querySelectorAll(".gallery-section");
-  sections.forEach(section => {
+  sections.forEach((section) => {
     section.classList.remove("active");
   });
 
@@ -31,5 +31,5 @@ function showSection(sectionId) {
 }
 
 window.onload = () => {
-  showSection('general');
+  showSection("general");
 };

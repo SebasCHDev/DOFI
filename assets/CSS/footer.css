@@ -1,130 +1,121 @@
-/* INICIO FOOTER*/
-
 .footer {
-    padding: 30px 10% 20px 10%;
-    background-color: #2c3e50;
+  padding: 30px 10% 20px 10%;
+  background-color: #2c3e50;
+  width: auto;
 }
 
-/* Primera fila: logo y texto */
 .logoEspacio {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    padding-right: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding-right: 25%;
 }
 
 .logoFooter img {
-    height: 120px;
-    width: 120px;
+  height: 120px;
+  width: 120px;
 }
 
 .textosFooter {
-    font-size: 26px;
-    font-weight: bold;
-    text-align: left;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: left;
 }
 
-/* Segunda fila: 4 columnas en una fila */
 .fila2 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .seccionesFooter {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Permite que las columnas se adapten si la pantalla es pequeña */
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .seccionesFooter > div {
-    flex: 1;
-    margin: 0 10px; /* Espacio entre columnas */
+  flex: 1;
+  margin: 0 10px;
 }
 
-.linksRapidos, .recursos, .legal, .redes {
-    text-align: left;
-    text-decoration: underline;
-    color: white;
+.linksRapidos,
+.recursos,
+.legal,
+.redes {
+  text-align: left;
+  text-decoration: underline;
+  color: white;
 }
 
 .redes img {
-    width: 32px;
-    height: 32px;
-    margin-right: 10px;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
 }
 
-#nosotrosFooter{
-    color: white;
+#nosotrosFooter {
+  color: white;
 }
 
-/* Botón de suscripción */
 .buttonInformation2 {
-    display: inline-block;
-    width: 150px;
-    padding: 12px;
-    background-color: #e7e7e7;
-    box-shadow: 2px 2px 3px 1px rgba(5, 196, 174, 0.986);
-    text-decoration: none;
-    color: black;
-    border-radius: 100px;
-    text-align: center;
-    font-size: 19px;
-    font-weight: bold;
-    margin: auto;
+  display: inline-block;
+  width: 150px;
+  padding: 12px;
+  background-color: #e7e7e7;
+  box-shadow: 2px 2px 3px 1px rgba(5, 196, 174, 0.986);
+  text-decoration: none;
+  color: black;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+  margin: auto;
 }
 
 .buttonInformation2:hover {
-    background-color: rgba(5, 196, 174, 0.986);
-    box-shadow: 3px 3px 5px 0px rgba(5, 196, 174, 0.986);
-    /* color: rgb(0, 0, 0); */
-    transition: 0.7s;
-    /* transform: scale(1.1, 1.1); */
-    /* transform: 0.5s ease; */
-    transform: rotate(360deg);
+  background-color: rgba(5, 196, 174, 0.986);
+  box-shadow: 3px 3px 5px 0px rgba(5, 196, 174, 0.986);
+  transition: 0.7s;
+  transform: rotate(360deg);
 }
 
 .buttonInformation3 {
-    display: inline-block;
-    width: 150px;
-    padding: 12px;
-    background-color: #e7e7e7;
-    box-shadow: 2px 2px 3px 1px rgba(5, 196, 174, 0.986);
-    text-decoration: none;
-    color: black;
-    border-radius: 100px;
-    text-align: center;
-    font-size: 19px;
-    font-weight: bold;
-    margin: 5px 0 0;
+  display: inline-block;
+  width: 150px;
+  padding: 12px;
+  background-color: #e7e7e7;
+  box-shadow: 2px 2px 3px 1px rgba(5, 196, 174, 0.986);
+  text-decoration: none;
+  color: black;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+  margin: 5px 0 0;
 }
 
 .buttonInformation3:hover {
-    background-color: rgba(5, 196, 174, 0.986);
-    box-shadow: 3px 3px 5px 0px rgba(5, 196, 174, 0.986);
-    /* color: rgb(0, 0, 0); */
-    transition: 0.7s;
-    transform: scale(1.1, 1.1); 
+  background-color: rgba(5, 196, 174, 0.986);
+  box-shadow: 3px 3px 5px 0px rgba(5, 196, 174, 0.986);
+  transition: 0.7s;
+  transform: scale(1.1, 1.1);
 }
 
-/* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
-    .seccionesFooter {
-        flex-direction: column;
-    }
+  .seccionesFooter {
+    flex-direction: column;
+  }
 
-    .seccionesFooter > div {
-        margin-bottom: 20px;
-    }
+  .seccionesFooter > div {
+    margin-bottom: 20px;
+  }
 }
 
-/* Tercera fila: Texto centrado */
 .fila3 p {
-    text-align: center;
-    font-size: 14px;
-    color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
 }
-
-/* FIN FOOTER*/

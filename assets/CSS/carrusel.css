@@ -1,306 +1,292 @@
-
-a{
-    text-decoration: none;
-    color: #eee;
-}
-/* flex container */
-
-
-/* Carousel */
-.carousel{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    margin-top: -20px; /* -50 px porque eso mide el height del header para que la im*/
-    position: relative; /* Hace que el overflow hiden se aplique*/
+a {
+  text-decoration: none;
+  color: #eee;
 }
 
-.carousel .list .item{
-    /* para que se sobrepongan entre si */
-    /* Alinear la posicion de acuerdo a la posicion del carrusel con absolute y carousel con relative. */
-    position: absolute; /* en pretederminado se alinea con el body, para eso se coloca relative en carousel */
-    /* los items se separaran de todas las direcciones 0 con respecto al margen de la clase carousel*/
-    inset: 0 0 0 0;
-    /* es lo mismo escribir inset: 0 0 0 0; para las posiciones */
-}
-.carousel .list .item img{
-    width: 100%; /* Para que las imagenes tengan el mismo width del div item*/
-    height: 100%;
-    /* las imagenes se pueden ver distorsionadas por las medidas para eso usamos: */
-    object-fit: cover;
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: -20px;
+  position: relative;
 }
 
-/* mover el contenido 20% del top */
-/* el width en pantallas grandes sera 1140 px */
-/* pantallas pequeñas el width sera del 80% */
+.carousel .list .item {
+  position: absolute;
+  inset: 0 0 0 0;
+}
+
+.carousel .list .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .carousel .list .item .content {
-    position: absolute;
-    width: 100%;
-    padding: 10px 0 10px 150px;
-    top: 20%;/* borde superior de .content estara ubicado al 20% de la altura del borde superior de su contenedor padre osea item */
-    /* max-width: 80%; */
-    left: 40%; /* coloca el borde izquierdo del elemento content en el centro del contenedor item */
-    transform: translateX(-40%);/* Causa que el texto se centre... Ajusta el elemento moviendolo hacia la izquierda 50% de su propio ancho, lo que centra el contenido en el contenedor.*/
-    /* left y transform translate x - 50 % se usan juntas para centrar un elemento horizontalmete. */
-    padding-right: 50%;/* encoger el elemento (?) una clase que declara width combinado con padding necesita declarar  box sizing border box para no cambiar el tamaño del width.*/
-    box-sizing: border-box;
-    color: #fff;
-    text-shadow: 0 5px 10px #0004;
-    background: rgba(0, 0, 0, 0.432);
+  position: absolute;
+  width: 100%;
+  padding: 10px 0 10px 150px;
+  top: 20%;
+  left: 40%;
+  transform: translateX(-40%);
+  padding-right: 50%;
+  box-sizing: border-box;
+  color: #fff;
+  text-shadow: 0 5px 10px #0004;
+  background: rgba(0, 0, 0, 0.432);
 }
 
-.carousel .list .item .content .author{
-    font-weight: bold;
-    color: rgba(5, 196, 174, 0.986);
-    letter-spacing: 5px;
+.carousel .list .item .content .author {
+  font-weight: bold;
+  color: rgba(5, 196, 174, 0.986);
+  letter-spacing: 5px;
 }
 
 .carousel .list .item .content .title {
-    font-weight: bold;
-    font-size: 3em;
-    color: rgba(5, 196, 174, 0.986);
-    text-shadow: 2px 2px 3px #2c3e50;
+  font-weight: bold;
+  font-size: 3em;
+  color: rgba(5, 196, 174, 0.986);
+  text-shadow: 2px 2px 3px #2c3e50;
 }
 
 .carousel .list .item .content .topic {
-    font-weight: bold;
-    font-size: 1.5em;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
-.carousel .list .item .content .topic{
-    color: #ffffff;
+.carousel .list .item .content .topic {
+  color: #ffffff;
 }
 
-.carousel .list .item .content .desc{
-    margin-top: 15px;
-    color:white;
-    font-size: 1.2em;
+.carousel .list .item .content .desc {
+  margin-top: 15px;
+  color: white;
+  font-size: 1.2em;
 }
 
-.carousel .list .item .content .buttons{
-    display: grid; /* dividir columnas */
-    grid-template-columns: repeat(2, 130px); /* 2 columnas de 130px */
-    grid-template-rows: 40px; /* button height 40px */
-    gap: 5px;
-    margin-top: 20px;
+.carousel .list .item .content .buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  grid-template-rows: 40px;
+  gap: 5px;
+  margin-top: 20px;
 }
 
-.carousel .list .item .content button{
-    border:none;
-    background-color: #eee;
-    letter-spacing: 3px;
-    font-family: Poppins;
-    font-weight: 500;
-}
-.carousel .list .item .content button:nth-child(2){
-    background-color: transparent;
-    color: #eee;
-    border: 1px solid #eee;
+.carousel .list .item .content button {
+  border: none;
+  background-color: #eee;
+  letter-spacing: 3px;
+  font-family: Poppins;
+  font-weight: 500;
 }
 
-/* thumbnail  min 8*/
-.thumbnail{
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    width: max-content; /* el width escalara de acuerdo al contenido interior. */
-    z-index: 100;
-    display: flex; /* Para que los items dentro esten en la misma fila */
-    gap: 20px;
+.carousel .list .item .content button:nth-child(2) {
+  background-color: transparent;
+  color: #eee;
+  border: 1px solid #eee;
 }
 
-.thumbnail .item{
-    width: 150px;
-    height: 220px;
-    flex-shrink: 0; /* La medida no se achica en pantallas pequeñas. */
-    position: relative; /* para que el contenido interior se pueda mover */
+.thumbnail {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: max-content;
+  z-index: 100;
+  display: flex;
+  gap: 20px;
 }
 
-.thumbnail .item img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
+.thumbnail .item {
+  width: 150px;
+  height: 220px;
+  flex-shrink: 0;
+  position: relative;
 }
 
-.thumbnail .item .content{
-    position: absolute; /* para mover la position. */
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
+.thumbnail .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
-.thumbnail .item .content .title{
-    font-weight: bold;
-    color:rgb(250, 252, 253);
-    text-shadow: 2px 2px 2px rgb(7, 98, 158);;
-    background-color: #63636373;
-    border-radius: 7%;
-    text-align: center;
+.thumbnail .item .content {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
 }
 
-/* arrows */
-.arrows{
-    position: absolute;
-    top: 80%; /* arrows se posiciona al 80% del top del carrusel. */
-    right: 52%;
-    width: 300px;
-    max-width: 30%; 
-    display:flex; /* para que ambos botones esten en la misma fila. */
-    gap: 25px;
-    align-items: center;
+.thumbnail .item .content .title {
+  font-weight: bold;
+  color: rgb(250, 252, 253);
+  text-shadow: 2px 2px 2px rgb(7, 98, 158);
+  background-color: #63636373;
+  border-radius: 7%;
+  text-align: center;
 }
 
-.arrows button{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: transparent; /*  el 4 sirve para blur transparencia. */
-    border: none;
-    font-family: monospace;
-    color: #fff;
-    border: 3px solid #ffffff;
-    font-weight: bold;
-    font-size: larger;
-    transition: .2s ease-in-out; /* para cuando haya hover haya efecto. */
-    z-index: 100;
+.arrows {
+  position: absolute;
+  top: 80%;
+  right: 52%;
+  width: 300px;
+  max-width: 30%;
+  display: flex;
+  gap: 25px;
+  align-items: center;
 }
 
-.arrows button:hover{
-    background-color: rgba(5, 196, 174, 0.986);
-    border: 2px solid white;
-    color: black;
-    font-weight: bolder;
-    padding: 10px;
-    cursor:pointer;
+.arrows button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  font-family: monospace;
+  color: #fff;
+  border: 3px solid #ffffff;
+  font-weight: bold;
+  font-size: larger;
+  transition: 0.2s ease-in-out;
+  z-index: 100;
 }
-/* estipular que el item en la primer posicion siempre sera el item que esta en estado activo */
-.carousel .list .item:nth-child(1){
-    z-index:1;
+
+.arrows button:hover {
+  background-color: rgba(5, 196, 174, 0.986);
+  border: 2px solid white;
+  color: black;
+  font-weight: bolder;
+  /* padding: 10px; */
+  cursor: pointer;
 }
-/* animacion */
+
+.carousel .list .item:nth-child(1) {
+  z-index: 1;
+}
+
 .carousel .list .item:nth-child(1) .author,
 .carousel .list .item:nth-child(1) .title,
 .carousel .list .item:nth-child(1) .topic,
-.carousel .list .item:nth-child(1) .desc{
-    transform: translateY(50px);
-    filter: blur(20px);
-    opacity: 0;
-    animation: showContent 0.5s linear 1 forwards;
+.carousel .list .item:nth-child(1) .desc {
+  transform: translateY(50px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent 0.5s linear 1 forwards;
 }
 
-@keyframes showContent{
-    to{
-        opacity: 1;
-        filter: blur(0);
-        transform:translateY(0);
-    }
+@keyframes showContent {
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
 }
-.carousel .list .item:nth-child(1) .title{
-    animation-delay: 0.7s;
-}
-.carousel .list .item:nth-child(1) .topic{
-    animation-delay: 1s;
-}
-.carousel .list .item:nth-child(1) .desc{
-    animation-delay: 1.6s;
-}
-/* contenido nuevo */
-/* Se agrega la clase next a div carousel para aplicar efecto de next alargando la imagen thumbnail con selectores */
 
-.carousel.next .list .item:nth-child(1) img{
-    /* convierte la imagen de fondo actual en thumbnail */
+.carousel .list .item:nth-child(1) .title {
+  animation-delay: 0.7s;
+}
+
+.carousel .list .item:nth-child(1) .topic {
+  animation-delay: 1s;
+}
+
+.carousel .list .item:nth-child(1) .desc {
+  animation-delay: 1.6s;
+}
+
+.carousel.next .list .item:nth-child(1) img {
+  width: 150px;
+  height: 220px;
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  border-radius: 20px;
+  animation: showImage 0.5s linear 1 forwards;
+}
+
+@keyframes showImage {
+  to {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 0;
+  }
+}
+
+.carousel.next .thumbnail .item:nth-last-child(1) {
+  width: 0;
+  overflow: hidden;
+  animation: showThumbnail 0.5s linear 1 forwards;
+}
+
+@keyframes showThumbnail {
+  to {
+    width: 150px;
+  }
+}
+
+.carousel.next .thumbnail {
+  transform: translateX(150px);
+  animation: transformThumbnail 0.5s linear 1 forwards;
+}
+
+@keyframes transformThumbnail {
+  to {
+    transform: translateX(0);
+  }
+}
+
+.carousel.prev .list .item:nth-child(2) {
+  z-index: 2;
+}
+
+.carousel.prev .list .item:nth-child(2) img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: outImage 0.5s linear 1 forwards;
+}
+
+@keyframes outImage {
+  to {
     width: 150px;
     height: 220px;
-    /* superponer el fondo al thumbnail numero 1*/
-    position: absolute;
+    border-radius: 20px;
     left: 50%;
-    bottom:50px;
-    border-radius:20px;
-    animation: showImage 0.5s linear 1 forwards;
-}
-/* animacion imagen fondo a thumbnail */
-@keyframes showImage{
-    to{
-        width: 100%;
-        height: 100%;
-        left: 0;
-        bottom: 0;
-        border-radius: 0;
-    }
-}
-/* cuando una imagen sea activada se debe mover el thumbnail al final de la fila  minuto 14:29 se mueve thumbnail 1 de html al final de los thumbnails*/
-.carousel.next .thumbnail .item:nth-last-child(1){
-    /* efecto desaparecer el ultimo thumbnail */
-    width: 0;
-    overflow: hidden; /* con el width desaparece el item, pero el contenido sigue visible, con overflow se oculta el texto */
-    animation: showThumbnail .5s linear 1 forwards;
-}
-@keyframes showThumbnail{
-    to{
-        width: 150px;
-    }
+    bottom: 50px;
+  }
 }
 
-.carousel.next .thumbnail{
-    /* cuando usuario de click en next */
-    transform: translateX(150px);
-    animation: transformThumbnail .5s linear 1 forwards;
-}
-@keyframes transformThumbnail{
-    to{
-        transform: translateX(0);
-    }
-}
-/* efecto prev click cuando el usuario hace click en previous button se agrega la clase a carousel prev.*/
-.carousel.prev .list .item:nth-child(2){
-    z-index: 2;/* para que sea visible el segundo item se aumenta su valor z index.*/
-}
-.carousel.prev .list .item:nth-child(2) img{
-    position: absolute;
-    bottom: 0;
-    left:0;
-    animation: outImage .5s linear 1 forwards;
-}
-@keyframes outImage{
-    to{
-        width: 150px;
-        height: 220px;
-        border-radius: 20px;
-        left: 50%;
-        bottom: 50px;
-    }
-}
-/* cuando el usuario presiona back, haremos el inverso al next, el fondo regresa a thumbnail */
-.carousel.prev .thumbnail .item:nth-child(1){
-    width: 0;
-    overflow:hidden;
-    opacity: 0;
-    animation: showThumbnail .5s linear 1 forwards;
+.carousel.prev .thumbnail .item:nth-child(1) {
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  animation: showThumbnail 0.5s linear 1 forwards;
 }
 
-/* cuando usuario presione back button oculta el contenido que predomina */
 .carousel.prev .list .item:nth-child(2) .author,
 .carousel.prev .list .item:nth-child(2) .title,
 .carousel.prev .list .item:nth-child(2) .topic,
 .carousel.prev .list .item:nth-child(2) .desc,
-.carousel.prev .list .item:nth-child(2) .buttons{
-    animation: contentOut 1.5s linear 1 forwards;
-}
-@keyframes contentOut{
-    to{
-        transform: translateY(-150px);
-        filter: blur(20px);
-        opacity: 0;
-    }
+.carousel.prev .list .item:nth-child(2) .buttons {
+  animation: contentOut 1.5s linear 1 forwards;
 }
 
-/* responsive */
-@media screen and (max-width: 678px){
-    .carousel .list .item .content{
-        padding-right:0;
-    }
-    .carousel .list .item .content .title{
-        font-size: 30px;
-    }
+@keyframes contentOut {
+  to {
+    transform: translateY(-150px);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .carousel .list .item .content {
+    padding-right: 0;
+  }
+  .carousel .list .item .content .title {
+    font-size: 30px;
+  }
 }

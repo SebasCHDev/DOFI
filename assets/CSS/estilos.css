@@ -1,5 +1,3 @@
-/* UNIVERSAL */
-
 body {
   height: auto;
   width: 100%;
@@ -16,8 +14,6 @@ body {
   width: 32px;
   height: 32px;
 }
-
-/* @MEDIA */
 
 @media (max-width: 742px) {
   .sectionDescription {
