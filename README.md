@@ -8,8 +8,9 @@
     no queda más que desearles a todos mil éxitos y bendiciones.
     💙¡Por siempre Talento Tech!💙
 
-DOFI
-    Proyecto final Talento Tech - Explorador
+> [!NOTE]
+> DOFI - Proyecto final Talento Tech - Explorador
+
 > [!NOTE]
 > INTEGRANTES:
     
